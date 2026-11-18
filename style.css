@@ -332,3 +332,316 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+/* =====================================
+   YAXO-SYSTEMS PREMIUM DESIGN UPGRADE
+===================================== */
+
+:root {
+    --primary: #082b59;
+    --secondary: #1055a5;
+    --accent: #2678e8;
+    --light-blue: #f1f7ff;
+}
+
+/* GENERAL TYPOGRAPHY */
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    letter-spacing: -0.2px;
+}
+
+section {
+    padding: 100px 8%;
+}
+
+/* PREMIUM NAVIGATION */
+
+header {
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 3px 20px rgba(8,43,89,0.05);
+}
+
+.logo {
+    font-size: 27px;
+    letter-spacing: -1.5px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 680px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 85% 20%, #d8eaff 0, transparent 30%),
+        linear-gradient(120deg, #ffffff 45%, #edf5ff 100%);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(38,120,232,0.15);
+    border-radius: 50%;
+    right: -100px;
+    bottom: -100px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    max-width: 850px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* PREMIUM BUTTONS */
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 7px;
+    background: linear-gradient(
+        135deg,
+        #2678e8,
+        #1055a5
+    );
+    box-shadow: 0 8px 20px rgba(38,120,232,0.2);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(38,120,232,0.3);
+}
+
+/* SECTION HEADINGS */
+
+.section-title h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.section-title h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: var(--accent);
+    margin: 18px auto;
+    border-radius: 5px;
+}
+
+/* PREMIUM CARDS */
+
+.service-card,
+.project-card,
+.solution-card {
+    position: relative;
+    overflow: hidden;
+    padding: 35px 30px;
+    border: 1px solid #e5edf8;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 8px 30px rgba(8,43,89,0.05);
+    transition: all 0.35s ease;
+}
+
+.service-card::before,
+.project-card::before,
+.solution-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        #1055a5,
+        #48a1ff
+    );
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.35s;
+}
+
+.service-card:hover::before,
+.project-card:hover::before,
+.solution-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card:hover,
+.project-card:hover,
+.solution-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 18px 40px rgba(8,43,89,0.12);
+}
+
+/* CARD HEADINGS */
+
+.service-card h3,
+.project-card h3,
+.solution-card h3 {
+    font-size: 20px;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+}
+
+.service-card p,
+.project-card p,
+.solution-card p {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background: linear-gradient(
+        135deg,
+        #f1f7ff,
+        #ffffff
+    );
+}
+
+.about-content {
+    max-width: 850px;
+}
+
+.about-content h3 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* WHY CHOOSE US */
+
+.why-us {
+    position: relative;
+    background:
+        radial-gradient(circle at top right, #174c88, transparent 40%),
+        linear-gradient(135deg, #071e40, #0c3970);
+    padding: 110px 8%;
+}
+
+.why-us h2 {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.why-us p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    background:
+        radial-gradient(circle at bottom left, #dcecff, transparent 40%),
+        #f4f8ff;
+    padding: 110px 8%;
+}
+
+.contact h2 {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.contact p {
+    line-height: 1.9;
+}
+
+/* FOOTER */
+
+footer {
+    background: #061a36;
+    padding: 45px 15px;
+    border-top: 3px solid #2678e8;
+}
+
+footer p {
+    line-height: 2;
+}
+
+/* SMOOTH ANIMATIONS */
+
+.service-card,
+.project-card,
+.solution-card {
+    animation-duration: 0.7s;
+}
+
+/* MOBILE OPTIMIZATION */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 75px 6%;
+    }
+
+    .hero {
+        min-height: 560px;
+        padding: 75px 7%;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .service-card,
+    .project-card,
+    .solution-card {
+        padding: 28px 23px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .why-us,
+    .contact {
+        padding: 85px 7%;
+    }
+}
