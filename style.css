@@ -945,3 +945,11 @@ footer p {
     }
 
 }
+.footer-logo {
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+}
