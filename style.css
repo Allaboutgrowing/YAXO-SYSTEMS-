@@ -953,3 +953,175 @@ footer p {
     margin-bottom: 15px;
     filter: brightness(0) invert(1);
 }
+/* =================================
+   YAXO-SYSTEMS COMPANY SECTION
+================================= */
+
+.company-section {
+    background: #f5f9ff;
+}
+
+.company-intro {
+    max-width: 1150px;
+    margin: 0 auto 65px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.company-label {
+    color: #2878df;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.company-description h3 {
+    color: #082b59;
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 18px 0;
+}
+
+.company-description p {
+    color: #64748b;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.company-highlight {
+    background: linear-gradient(135deg, #082b59, #1455a5);
+    padding: 50px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(8,43,89,0.15);
+}
+
+.company-highlight img {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+    margin-bottom: 25px;
+}
+
+.company-highlight h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.company-highlight p {
+    color: #d5e5fa;
+    line-height: 1.8;
+}
+
+/* MISSION AND VISION */
+
+.mission-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.mission-card {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    border: 1px solid #e1eaf7;
+    box-shadow: 0 8px 25px rgba(8,43,89,0.05);
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-6px);
+}
+
+.mission-icon {
+    font-size: 35px;
+    color: #2878df;
+    margin-bottom: 15px;
+}
+
+.mission-card h3 {
+    color: #082b59;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* CORE VALUES */
+
+.values-section {
+    margin-top: 85px;
+}
+
+.values-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.value-card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 12px;
+    border-bottom: 4px solid #2878df;
+    box-shadow: 0 8px 25px rgba(8,43,89,0.05);
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+}
+
+.value-card h3 {
+    color: #082b59;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .company-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .company-description h3 {
+        font-size: 27px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
