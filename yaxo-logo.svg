@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 520 120">
+
+    <defs>
+        <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#42A5FF"/>
+            <stop offset="100%" stop-color="#0754C7"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Logo Symbol -->
+    <path d="M10 20 L48 20 L76 65 L105 20
+             L145 20 L76 112 Z"
+          fill="url(#blue)"/>
+
+    <path d="M77 112 L116 112 L172 20
+             L132 20 Z"
+          fill="#082B59"/>
+
+    <!-- Company Name -->
+    <text x="185" y="68"
+          font-family="Arial, sans-serif"
+          font-size="43"
+          font-weight="800"
+          fill="#082B59">
+        YAXO<tspan fill="#2878DF">-SYSTEMS</tspan>
+    </text>
+
+    <!-- Tagline -->
+    <text x="188" y="96"
+          font-family="Arial, sans-serif"
+          font-size="13"
+          font-weight="bold"
+          letter-spacing="3"
+          fill="#64748B">
+        BUILD • INNOVATE • GROW
+    </text>
+
+</svg>
