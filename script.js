@@ -3,28 +3,36 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // MOBILE NAVIGATION
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-    if (menuToggle && navLinks) {
+if (menuToggle && navLinks) {
 
-        menuToggle.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
+    menuToggle.addEventListener("click", function () {
 
-            menuToggle.textContent =
-                navLinks.classList.contains("active") ? "✕" : "☰";
+        const isOpen = navLinks.classList.toggle("active");
+
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.textContent = "☰";
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
         });
 
-        // Close menu after clicking a navigation link
-        navLinks.querySelectorAll("a").forEach(function (link) {
+    });
 
-            link.addEventListener("click", function () {
-                navLinks.classList.remove("active");
-                menuToggle.textContent = "☰";
-            });
-
-        });
-    }
+}
 
     // CURRENT YEAR IN FOOTER
     const footer = document.querySelector("footer p");
