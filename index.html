@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yaxo-Systems provides technology solutions, website and application development, business systems, IT support and digital services.">
+<meta name="theme-color" content="#101010">
+<title>Yaxo-Systems | Technology & Digital Solutions</title>
+<style>
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --yellow: #f5c518;
+    --black: #101010;
+    --dark: #171717;
+    --white: #ffffff;
+    --gray: #aaaaaa;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    padding: 90px 0;
+}
+.section-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.section-title span {
+    color: var(--yellow);
+}
+.section-description {
+    color: var(--gray);
+    max-width: 650px;
+    margin-bottom: 40px;
+}
+/* NAVIGATION */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(16,16,16,0.96);
+    border-bottom: 1px solid #292929;
+}
+.navbar {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.logo span {
+    color: var(--yellow);
+}
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+.nav-links a {
+    font-size: 14px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: var(--yellow);
+}
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+/* HERO */
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background:
+    radial-gradient(circle at 80% 50%, #3b3215 0%, transparent 35%),
+    linear-gradient(120deg, #101010, #191919);
+}
+.hero-content {
+    max-width: 750px;
+}
+.hero-label {
+    color: var(--yellow);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    font-size: clamp(42px, 7vw, 75px);
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+.hero h1 span {
+    color: var(--yellow);
+}
+.hero p {
+    color: #c5c5c5;
+    max-width: 650px;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 5px;
+}
+.btn-primary {
+    background: var(--yellow);
+    color: var(--black);
+}
+.btn-primary:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+.btn-outline {
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+}
+.btn-outline:hover {
+    background: var(--yellow);
+    color: var(--black);
+}
+/* ABOUT */
+.about {
+    background: #171717;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.about-box {
+    background: #202020;
+    border-left: 4px solid var(--yellow);
+    padding: 35px;
+    border-radius: 8px;
+}
+.about-box h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.about-box p {
+    color: var(--gray);
+}
+.about-info p {
+    color: #bbbbbb;
+    margin-bottom: 18px;
+}
+/* SERVICES */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.service-card {
+    background: #1c1c1c;
+    padding: 30px;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--yellow);
+}
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.service-card h3 {
+    color: var(--yellow);
+    margin-bottom: 12px;
+}
+.service-card p {
+    color: var(--gray);
+    font-size: 14px;
+}
+/* PRODUCTS */
+.products {
+    background: #171717;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.product-card {
+    background: #222;
+    padding: 35px;
+    border-radius: 8px;
+    border-bottom: 3px solid var(--yellow);
+}
+.product-card h3 {
+    color: var(--yellow);
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+.product-card p {
+    color: var(--gray);
+}
+/* WHY US */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.why-card {
+    text-align: center;
+    padding: 30px 20px;
+}
+.why-card h3 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+}
+.why-card p {
+    color: var(--gray);
+}
+/* PROCESS */
+.process {
+    background: #171717;
+}
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.process-card {
+    padding: 25px;
+    background: #222;
+    border-radius: 8px;
+}
+.process-number {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--yellow);
+}
+.process-card h3 {
+    margin-bottom: 10px;
+}
+.process-card p {
+    color: var(--gray);
+    font-size: 14px;
+}
+/* CTA */
+.cta {
+    text-align: center;
+    background: linear-gradient(120deg, #28220d, #171717);
+}
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+.cta p {
+    color: var(--gray);
+    margin-bottom: 25px;
+}
+/* CONTACT */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.contact-info h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    color: var(--gray);
+    margin-bottom: 18px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #202020;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+.contact-form button {
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+/* FOOTER */
+footer {
+    background: #080808;
+    padding: 45px 0 20px;
+    border-top: 1px solid #292929;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-content p {
+    color: var(--gray);
+    font-size: 14px;
+}
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footer-links a:hover {
+    color: var(--yellow);
+}
+.copyright {
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #292929;
+    margin-top: 35px;
+    padding-top: 20px;
+    font-size: 13px;
+}
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    color: white;
+    padding: 13px 19px;
+    border-radius: 30px;
+    font-weight: bold;
+    z-index: 999;
+}
+/* RESPONSIVE DESIGN */
+@media(max-width: 850px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #151515;
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .services-grid,
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 600px) {
+    section {
+        padding: 65px 0;
+    }
+    .hero {
+        min-height: 570px;
+    }
+    .hero h1 {
+        font-size: 43px;
+    }
+    .about-grid,
+    .services-grid,
+    .product-grid,
+    .why-grid,
+    .process-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-title {
+        font-size: 29px;
+    }
+    .cta h2 {
+        font-size: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+<!-- NAVIGATION -->
+<header>
+<div class="container navbar">
+<a href="#home" class="logo">
+YAXO<span>-SYSTEMS</span>
+</a>
+<button class="menu-btn" id="menuBtn">
+☰
+</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</header>
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-content">
+<div class="hero-label">
+TECHNOLOGY • INNOVATION • DIGITAL SOLUTIONS
+</div>
+<h1>
+Building Digital Solutions.<br>
+Creating <span>Opportunities.</span>
+</h1>
+<p>
+Yaxo-Systems is a technology and digital solutions business
+focused on helping individuals, startups and organizations
+solve problems, improve operations and grow through technology.
+</p>
+<a href="#services" class="btn btn-primary">
+Explore Our Services
+</a>
+<a href="#contact" class="btn btn-outline">
+Work With Us
+</a>
+</div>
+</div>
+</section>
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+<div class="container">
+<div class="about-grid">
+<div class="about-box">
+<h3>About Yaxo-Systems</h3>
+<p>
+Yaxo-Systems is a technology-focused business established
+to provide practical digital solutions, software development
+and technology services.
+We believe technology should do more than look impressive.
+It should solve real problems, improve productivity and
+create meaningful opportunities.
+</p>
+</div>
+<div class="about-info">
+<h2 class="section-title">
+Who <span>We Are</span>
+</h2>
+<p>
+Our approach combines creativity, technical development
+and practical problem-solving to deliver solutions that
+support modern businesses and individuals.
+</p>
+<p>
+From website development to digital business systems,
+we aim to make technology accessible, useful and effective.
+</p>
+<p>
+Our vision is to grow into a recognized technology
+company delivering innovative solutions across different
+industries.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICES SECTION -->
+<section id="services">
+<div class="container">
+<h2 class="section-title">
+Our <span>Services</span>
+</h2>
+<p class="section-description">
+We provide technology services designed to help businesses
+establish, operate and grow in an increasingly digital world.
+</p>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">💻</div>
+<h3>Website Development</h3>
+<p>
+Professional business websites, portfolio websites,
+landing pages and custom web solutions.
+</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📱</div>
+<h3>Application Development</h3>
+<p>
+Development of mobile and web applications
+designed around practical user and business needs.
+</p>
+</div>
+<div class="service-card">
+<div class="service-icon">⚙️</div>
+<h3>Business Systems</h3>
+<p>
+Digital systems that support business operations,
+record management, reporting and workflow automation.
+</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🛡️</div>
+<h3>Cybersecurity</h3>
+<p>
+Technology security awareness, security-focused
+solutions and digital risk management support.
+</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🔧</div>
+<h3>IT Support</h3>
+<p>
+Technical assistance, system setup, troubleshooting
+and general IT support services.
+</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📈</div>
+<h3>Digital Marketing</h3>
+<p>
+Digital visibility, online promotion, business
+branding support and digital growth strategies.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PRODUCTS SECTION -->
+<section class="products" id="products">
+<div class="container">
+<h2 class="section-title">
+Our <span>Products & Innovation</span>
+</h2>
+<p class="section-description">
+Beyond providing services, Yaxo-Systems is interested
+in developing technology products that address practical
+challenges across different industries.
+</p>
+<div class="product-grid">
+<div class="product-card">
+<h3>FarmBook</h3>
+<p>
+A digital agriculture and livestock management concept
+designed to help farmers organize farm activities,
+manage records and improve agricultural operations.
+</p>
+</div>
+<div class="product-card">
+<h3>Future Innovations</h3>
+<p>
+We are committed to exploring and developing
+new digital products, software solutions and
+technology-driven business ideas.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE US -->
+<section id="why">
+<div class="container">
+<h2 class="section-title">
+Why Choose <span>Yaxo-Systems?</span>
+</h2>
+<p class="section-description">
+We focus on delivering technology that has practical
+value and supports real business objectives.
+</p>
+<div class="why-grid">
+<div class="why-card">
+<h3>Innovation</h3>
+<p>
+We embrace new ideas and explore better ways
+to solve everyday challenges.
+</p>
+</div>
+<div class="why-card">
+<h3>Practical Solutions</h3>
+<p>
+We focus on useful technology that addresses
+actual business and operational needs.
+</p>
+</div>
+<div class="why-card">
+<h3>Customer Focus</h3>
+<p>
+We value understanding each client's needs
+before developing a solution.
+</p>
+</div>
+<div class="why-card">
+<h3>Continuous Growth</h3>
+<p>
+We believe in learning, improving and adapting
+as technology continues to evolve.
+</p>
+</div>
+<div class="why-card">
+<h3>Professionalism</h3>
+<p>
+We value communication, responsibility
+and quality in our work.
+</p>
+</div>
+<div class="why-card">
+<h3>Long-Term Vision</h3>
+<p>
+We are building towards sustainable technology
+solutions and meaningful partnerships.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- WORK PROCESS -->
+<section class="process">
+<div class="container">
+<h2 class="section-title">
+How We <span>Work</span>
+</h2>
+<p class="section-description">
+Our approach is built around understanding,
+planning and delivering the right solution.
+</p>
+<div class="process-grid">
+<div class="process-card">
+<div class="process-number">01</div>
+<h3>Understand</h3>
+<p>
+We understand the client's goals,
+challenges and requirements.
+</p>
+</div>
+<div class="process-card">
+<div class="process-number">02</div>
+<h3>Plan</h3>
+<p>
+We identify the appropriate technology
+and develop a practical approach.
+</p>
+</div>
+<div class="process-card">
+<div class="process-number">03</div>
+<h3>Develop</h3>
+<p>
+We design and develop solutions
+based on agreed requirements.
+</p>
+</div>
+<div class="process-card">
+<div class="process-number">04</div>
+<h3>Deliver</h3>
+<p>
+We test, deliver and provide
+appropriate support.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION -->
+<section class="cta">
+<div class="container">
+<h2>
+Let's Build Something <span style="color:#f5c518">Meaningful.</span>
+</h2>
+<p>
+Have a business idea, project or technology challenge?
+Let's discuss how we can work together.
+</p>
+<a href="#contact" class="btn btn-primary">
+Start a Conversation
+</a>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section id="contact">
+<div class="container">
+<h2 class="section-title">
+Get In <span>Touch</span>
+</h2>
+<p class="section-description">
+We welcome business enquiries, project discussions,
+collaborations and partnership opportunities.
+</p>
+<div class="contact-grid">
+<div class="contact-info">
+<h3>Let's Connect</h3>
+<p>
+Have a project in mind? Reach out to us
+and let's explore the possibilities.
+</p>
+<p>
+<strong>Email:</strong><br>
+<a href="mailto:yayamohammed292@gmail.com">
+yayamohammed292@gmail.com
+</a>
+</p>
+<p>
+<strong>Business:</strong><br>
+Yaxo-Systems
+</p>
+<p>
+<strong>Business Enquiries:</strong><br>
+Website Development, Software Solutions,
+IT Services and Partnerships.
+</p>
+</div>
+<form class="contact-form" id="contactForm">
+<input
+type="text"
+id="name"
+placeholder="Your Full Name"
+required
+>
+<input
+type="email"
+id="email"
+placeholder="Your Email Address"
+required
+>
+<input
+type="text"
+id="subject"
+placeholder="Subject"
+required
+>
+<textarea
+id="message"
+placeholder="Tell us about your project..."
+required
+></textarea>
+<button type="submit" class="btn btn-primary">
+Send Enquiry
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div>
+<a href="#home" class="logo">
+YAXO<span>-SYSTEMS</span>
+</a>
+<p>
+Technology. Innovation. Digital Solutions.
+</p>
+</div>
+<div class="footer-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+<div class="copyright">
+© <span id="year"></span> Yaxo-Systems.
+All Rights Reserved.
+</div>
+</div>
+</footer>
+<!-- WHATSAPP -->
+<a
+href="https://wa.me/233542408676"
+class="whatsapp"
+target="_blank"
+rel="noopener"
+>
+WhatsApp
+</a>
+<!-- JAVASCRIPT -->
+<script>
+// MOBILE NAVIGATION
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+menuBtn.addEventListener("click", function() {
+    navLinks.classList.toggle("active");
+});
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", function() {
+        navLinks.classList.remove("active");
+    });
+});
+// AUTOMATIC COPYRIGHT YEAR
+document.getElementById("year").textContent =
+new Date().getFullYear();
+// CONTACT FORM
+document.getElementById("contactForm")
+.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+    const recipient = "yayamohammed292@gmail.com";
+    const body =
+    "Name: " + name + "%0D%0A" +
+    "Email: " + email + "%0D%0A%0D%0A" +
+    "Message: " + message;
+    const mailto =
+    "mailto:" + recipient +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + body;
+    window.location.href = mailto;
+});
+</script>
+</body>
+</html>
