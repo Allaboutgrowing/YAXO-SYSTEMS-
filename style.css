@@ -645,3 +645,281 @@ footer p {
         padding: 85px 7%;
     }
 }
+/* =====================================
+   YAXO-SYSTEMS CORPORATE DESIGN
+   STEP 6 - PREMIUM SECTIONS
+===================================== */
+
+/* HERO LABEL */
+
+.hero-label,
+.eyebrow {
+    display: inline-block;
+    color: #2678e8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    color: #0b2d5c;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    color: #2678e8;
+    transform: translateX(5px);
+}
+
+/* STATISTICS SECTION */
+
+.stats-section {
+    padding: 55px 8%;
+    background: #082b59;
+}
+
+.stats-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 15px;
+    border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-item h2 {
+    color: #66aaff;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.stat-item p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* SERVICE ICONS */
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf5ff;
+    color: #2678e8;
+    font-size: 27px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+.service-card:hover .service-icon {
+    background: #2678e8;
+    color: #ffffff;
+    transform: rotate(-5deg);
+}
+
+/* SOLUTIONS SECTION */
+
+.solutions-section {
+    background: #f3f7fd;
+}
+
+.solution-card {
+    border-left: 4px solid #2678e8;
+}
+
+/* PROJECT SHOWCASE */
+
+.project-number {
+    color: #2678e8;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.project-status {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 7px 13px;
+    border-radius: 30px;
+    background: #edf5ff;
+    color: #1455a0;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* WHY CHOOSE US */
+
+.why-us .eyebrow {
+    color: #8dbfff;
+}
+
+.why-us .btn {
+    margin-top: 30px;
+    background: #ffffff;
+    color: #1055a5;
+}
+
+.why-us .btn:hover {
+    background: #2678e8;
+    color: #ffffff;
+}
+
+/* CONTACT */
+
+.contact .eyebrow {
+    margin-bottom: 15px;
+}
+
+.contact h2 {
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.contact p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* PREMIUM FOOTER */
+
+.footer-content {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 45px;
+    text-align: left;
+}
+
+.footer-brand .logo {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-brand .logo span {
+    color: #66aaff;
+}
+
+.footer-brand p {
+    max-width: 300px;
+    color: #bdcde2;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #bdcde2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #66aaff;
+    padding-left: 5px;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #aebfd5;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        gap: 20px;
+    }
+
+    .hero-label {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-item h2 {
+        font-size: 30px;
+    }
+
+}
