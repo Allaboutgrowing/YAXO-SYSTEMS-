@@ -923,3 +923,25 @@ footer p {
     }
 
 }
+/* YAXO-SYSTEMS LOGO */
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 260px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 500px) {
+
+    .brand-logo {
+        width: 195px;
+    }
+
+}
