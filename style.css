@@ -1389,3 +1389,128 @@ img {
     }
 
 }
+/* ========================================
+   PREMIUM PROJECTS SECTION
+======================================== */
+
+.projects {
+    position: relative;
+    background: #FFFFFF;
+}
+
+.projects .section-heading {
+    margin-bottom: 70px;
+}
+
+.projects .section-heading h2 {
+    letter-spacing: -1.5px;
+}
+
+.projects-grid {
+    gap: 35px;
+}
+
+.project-card {
+    border: 1px solid #DCEAFF;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0 10px 35px rgba(11, 45, 92, 0.045);
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 25px 60px rgba(11, 45, 92, 0.12);
+}
+
+.project-visual {
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-visual::before,
+.project-visual::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.project-visual::before {
+    width: 240px;
+    height: 240px;
+    top: -100px;
+    right: -50px;
+}
+
+.project-visual::after {
+    width: 180px;
+    height: 180px;
+    bottom: -110px;
+    left: -40px;
+}
+
+.project-visual i {
+    font-size: 62px;
+    margin-bottom: 5px;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-visual i {
+    transform: scale(1.12);
+}
+
+.farmbook-visual {
+    background: linear-gradient(135deg, #0B2D5C, #1455A0, #2878DF);
+}
+
+.systems-visual {
+    background: linear-gradient(135deg, #1455A0, #2878DF);
+}
+
+.project-content {
+    padding: 35px;
+}
+
+.project-status {
+    padding: 7px 13px;
+    border-radius: 30px;
+    background: #EDF5FF;
+    color: #1455A0;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    font-weight: 800;
+}
+
+.project-content h3 {
+    font-size: 23px;
+    margin-top: 18px;
+    margin-bottom: 13px;
+    letter-spacing: -0.5px;
+}
+
+.project-content p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #527096;
+}
+
+/* Mobile refinement */
+
+@media (max-width: 768px) {
+
+    .projects .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .project-visual {
+        height: 220px;
+    }
+
+    .project-content {
+        padding: 27px;
+    }
+
+}
