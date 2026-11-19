@@ -1,154 +1,129 @@
-// MOBILE NAVIGATION
+/* =========================================
+YAXO-SYSTEMS
+Website JavaScript
+========================================= */
 
-const menuToggle = document.getElementById("menuToggle");
+/* 1. MOBILE NAVIGATION */
 
-const navLinks = document.getElementById("navLinks");
+const menuToggle = document.getElementById(“menuToggle”);
+const mainNav = document.getElementById(“mainNav”);
 
+if (menuToggle && mainNav) {
 
-menuToggle.addEventListener("click", function () {
-
-    navLinks.classList.toggle("active");
-
-    const isOpen = navLinks.classList.contains("active");
-
+menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
     menuToggle.innerHTML = isOpen
         ? '<i class="fas fa-times"></i>'
         : '<i class="fas fa-bars"></i>';
-
-    menuToggle.setAttribute("aria-expanded", isOpen);
-
 });
-
-
-// CLOSE MENU AFTER CLICKING A LINK
-
-document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-    link.addEventListener("click", function() {
-
-        navLinks.classList.remove("active");
-
-        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-
+// Close menu after clicking a navigation link
+const navLinks = mainNav.querySelectorAll("a");
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mainNav.classList.remove("active");
         menuToggle.setAttribute("aria-expanded", "false");
-
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
     });
-
 });
 
+}
 
-// AUTOMATIC COPYRIGHT YEAR
+/* 2. AUTOMATIC COPYRIGHT YEAR */
 
-const yearElement = document.getElementById("year");
+const currentYear = document.getElementById(“currentYear”);
 
-yearElement.textContent = new Date().getFullYear();
+if (currentYear) {
+currentYear.textContent = new Date().getFullYear();
+}
 
+/* 3. WHATSAPP CONTACT FORM */
 
-// CONTACT FORM
+const contactForm = document.getElementById(“contactForm”);
 
-const contactForm = document.getElementById("contactForm");
+if (contactForm) {
 
 contactForm.addEventListener("submit", function(event) {
-
     event.preventDefault();
-
+    // Collect form information
     const name = document.getElementById("name").value.trim();
-
     const email = document.getElementById("email").value.trim();
-
     const service = document.getElementById("service").value;
-
     const message = document.getElementById("message").value.trim();
-
-
+    // Check required information
     if (!name || !email || !service || !message) {
-
-        alert("Please complete all fields before sending.");
-
+        alert("Please complete all the required fields.");
         return;
-
     }
-
-
+    // Prepare WhatsApp message
     const whatsappMessage =
-
-        "Hello Yaxo-Systems!" +
-
-        "\n\nMy Name: " + name +
-
-        "\nEmail: " + email +
-
-        "\nService: " + service +
-
-        "\n\nProject Details: " + message;
-
-
+        "Hello Yaxo-Systems,%0A%0A" +
+        "*New Website Enquiry*%0A%0A" +
+        "*Name:* " + encodeURIComponent(name) + "%0A" +
+        "*Email:* " + encodeURIComponent(email) + "%0A" +
+        "*Service:* " + encodeURIComponent(service) + "%0A%0A" +
+        "*Message:*%0A" + encodeURIComponent(message);
+    // Yaxo-Systems WhatsApp number
+    const whatsappNumber = "233542408676";
+    // Open WhatsApp with prepared message
     const whatsappURL =
-
-        "https://wa.me/233542408676?text=" +
-
-        encodeURIComponent(whatsappMessage);
-
-
-    window.open(whatsappURL, "_blank");
-
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        whatsappMessage;
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
 });
 
+}
 
-// SCROLL ANIMATION
+/* 4. ACTIVE NAVIGATION LINK */
 
-const observerOptions = {
+const sections = document.querySelectorAll(“main section[id]”);
 
-    threshold: 0.15
+const navigationLinks = document.querySelectorAll(”.nav-link”);
 
-};
+if (“IntersectionObserver” in window) {
 
-
-const observer = new IntersectionObserver(function(entries) {
-
-    entries.forEach(function(entry) {
-
-        if (entry.isIntersecting) {
-
-            entry.target.classList.add("visible");
-
-        }
-
-    });
-
-}, observerOptions);
-
-
-document.querySelectorAll(
-    ".service-card, .solution-card, .why-card, .process-item"
-).forEach(function(element) {
-
-    observer.observe(element);
-
-});
-
-
-// HEADER SCROLL EFFECT
-
-window.addEventListener("scroll", function() {
-
-    const header = document.querySelector(".header");
-
-    if (window.scrollY > 50) {
-
-        header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.05)";
-
-    } else {
-
-        header.style.boxShadow = "none";
-
+const sectionObserver = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navigationLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (
+                        link.getAttribute("href") ===
+                        "#" + entry.target.id
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+    },
+    {
+        rootMargin: "-35% 0px -55% 0px"
     }
+);
+sections.forEach(section => {
+    sectionObserver.observe(section);
+});
+
+}
+
+/* 5. CLOSE MOBILE MENU WHEN RESIZED */
+
+window.addEventListener(“resize”, () => {
+
+if (window.innerWidth > 760 && mainNav && menuToggle) {
+    mainNav.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+}
 
 });
 
+/* 6. CONSOLE MESSAGE */
 
-// CONSOLE MESSAGE
-
-console.log("Yaxo-Systems website successfully loaded.");
-
-console.log("Technology That Moves Business Forward.");
+console.log(
+“Yaxo-Systems website successfully loaded.”
+);
