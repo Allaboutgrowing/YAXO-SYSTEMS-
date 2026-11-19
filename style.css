@@ -1222,3 +1222,227 @@ animation-iteration-count: 1 !important;
 transition-duration: 0.01ms !important;
 }
 }
+/* =========================================
+   YAXO-SYSTEMS
+   ORIGINAL BLUE & WHITE DESIGN
+========================================= */
+
+/* HERO */
+.hero {
+    background: linear-gradient(
+        120deg,
+        #FFFFFF 0%,
+        #F4F8FF 65%,
+        #E8F1FF 100%
+    );
+}
+
+.hero h1 span {
+    color: #2878DF;
+}
+
+/* INTRODUCTION */
+.intro-section {
+    background: #0B2D5C;
+}
+
+.intro-content p {
+    color: #E4EEFF;
+}
+
+/* ABOUT */
+.about-section {
+    background: #EDF5FF;
+}
+
+.about-main h3,
+.value-item h4 {
+    color: #0B2D5C;
+}
+
+.value-icon {
+    background: #DCEAFF;
+    color: #1455A0;
+}
+
+/* SECTION HEADINGS */
+.section-heading h2 {
+    color: #0B2D5C;
+}
+
+.section-heading h2 span {
+    color: #2878DF;
+}
+
+.section-heading p {
+    color: #496582;
+}
+
+/* SERVICES */
+.services-section {
+    background: #F4F8FF;
+}
+
+.service-item {
+    background: #FFFFFF;
+    border: 1px solid #D7E6F7;
+}
+
+.service-item:hover {
+    border-color: #2878DF;
+    box-shadow: 0 15px 40px rgba(11, 45, 92, 0.12);
+}
+
+.service-icon {
+    background: #E5F0FF;
+    color: #1455A0;
+}
+
+.service-item h3 {
+    color: #0B2D5C;
+}
+
+.service-link {
+    color: #1455A0;
+}
+
+/* EXPERTISE */
+.expertise-section {
+    background: #0B2D5C;
+}
+
+.expertise-content h2,
+.expertise-item h3 {
+    color: #FFFFFF;
+}
+
+.expertise-content h2 span {
+    color: #62B2FF;
+}
+
+/* PROJECTS */
+.projects-section {
+    background: #FFFFFF;
+}
+
+.project-card {
+    border: 1px solid #D7E6F7;
+}
+
+.project-visual {
+    background: linear-gradient(
+        135deg,
+        #EAF3FF,
+        #D5E7FF
+    );
+}
+
+.project-visual i {
+    color: #1455A0;
+}
+
+.project-status {
+    color: #1455A0;
+}
+
+.project-details h3 {
+    color: #0B2D5C;
+}
+
+.project-category {
+    background: #EDF5FF;
+    color: #1455A0;
+}
+
+/* INNOVATION */
+.innovation-section {
+    background: #1455A0;
+}
+
+.innovation-container .section-tag {
+    color: #DCEBFF;
+}
+
+/* CONTACT */
+.contact-section {
+    background: #EDF5FF;
+}
+
+.contact-form-container {
+    background: #FFFFFF;
+}
+
+.contact-content h2 {
+    color: #0B2D5C;
+}
+
+.contact-icon {
+    background: #FFFFFF;
+    color: #1455A0;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background: #F8FBFF;
+    border-color: #D7E6F7;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #1455A0;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: #0B2D5C;
+}
+
+.nav-contact {
+    background: #1455A0;
+}
+
+.nav-contact:hover {
+    background: #0B2D5C;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #071F42;
+    color: #DCE8F8;
+}
+
+.footer-column h4 {
+    color: #FFFFFF;
+}
+
+.footer-column a:hover {
+    color: #62B2FF;
+}
+
+.back-to-top {
+    color: #62B2FF;
+}
+
+/* NAVIGATION */
+.nav-link {
+    color: #0B2D5C;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2878DF;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+    background: #20B96B;
+}
+
+/* MOBILE MENU */
+@media (max-width: 760px) {
+    .main-nav {
+        background: #FFFFFF;
+        border-top: 1px solid #D7E6F7;
+    }
+}
