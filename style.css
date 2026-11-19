@@ -1961,3 +1961,106 @@ html {
         transition-duration: 0.01ms !important;
     }
 }
+/* ========================================
+   YAXO-SYSTEMS TECHNOLOGY APPROACH
+======================================== */
+
+.approach {
+    background: #F0F6FF;
+    position: relative;
+    overflow: hidden;
+}
+
+.approach .section-heading {
+    margin-bottom: 65px;
+}
+
+.approach .section-heading h2 {
+    letter-spacing: -1.5px;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.approach-card {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #DCEAFF;
+    border-radius: 16px;
+    padding: 35px 28px;
+    box-shadow: 0 10px 30px rgba(11, 45, 92, 0.04);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.approach-card:hover {
+    transform: translateY(-8px);
+    border-color: #B8D5F8;
+    box-shadow: 0 22px 45px rgba(11, 45, 92, 0.10);
+}
+
+.approach-number {
+    position: absolute;
+    top: 20px;
+    right: 23px;
+    font-size: 34px;
+    font-weight: 800;
+    color: #E5F0FF;
+}
+
+.approach-icon {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #EDF5FF;
+    color: #1455A0;
+    font-size: 24px;
+    margin-bottom: 25px;
+    transition: all 0.35s ease;
+}
+
+.approach-card:hover .approach-icon {
+    background: linear-gradient(135deg, #1455A0, #2878DF);
+    color: #FFFFFF;
+}
+
+.approach-card h3 {
+    color: #0B2D5C;
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+.approach-card p {
+    color: #527096;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1000px) {
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .approach .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .approach-card {
+        padding: 30px 25px;
+    }
+}
