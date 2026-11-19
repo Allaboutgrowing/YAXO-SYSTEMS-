@@ -2064,3 +2064,178 @@ html {
         padding: 30px 25px;
     }
 }
+/* ========================================
+   FARMBOOK PRODUCT SHOWCASE
+======================================== */
+
+.farmbook-showcase {
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.farmbook-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.farmbook-content h2 {
+    font-size: clamp(34px, 4vw, 48px);
+    color: #0B2D5C;
+    margin: 18px 0;
+    letter-spacing: -1.5px;
+}
+
+.farmbook-content h2 span {
+    color: #2878DF;
+}
+
+.farmbook-intro {
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #1455A0 !important;
+}
+
+.farmbook-content p {
+    color: #527096;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.farmbook-features {
+    display: grid;
+    gap: 17px;
+    margin: 30px 0;
+}
+
+.farmbook-features div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #0B2D5C;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.farmbook-features i {
+    color: #2878DF;
+    font-size: 18px;
+}
+
+.farmbook-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #EDF5FF;
+    color: #1455A0;
+    border: 1px solid #D7E6F7;
+    border-radius: 30px;
+    padding: 12px 18px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.farmbook-visual {
+    background: linear-gradient(135deg, #0B2D5C, #1455A0, #2878DF);
+    border-radius: 22px;
+    padding: 45px;
+    position: relative;
+    box-shadow: 0 25px 60px rgba(11, 45, 92, 0.16);
+}
+
+.farmbook-mockup {
+    background: #FFFFFF;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mockup-header {
+    background: #F0F6FF;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1455A0;
+    font-size: 19px;
+    font-weight: 800;
+    border-bottom: 1px solid #DCEAFF;
+}
+
+.mockup-header i {
+    font-size: 22px;
+    color: #2878DF;
+}
+
+.mockup-body {
+    padding: 30px 25px;
+}
+
+.mockup-label {
+    color: #2878DF;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.mockup-body h3 {
+    color: #0B2D5C;
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.mockup-body > p {
+    color: #527096;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.mockup-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.mockup-stat {
+    background: #F0F6FF;
+    border: 1px solid #DCEAFF;
+    border-radius: 10px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #1455A0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.mockup-stat i {
+    font-size: 22px;
+    color: #2878DF;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+
+    .farmbook-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .farmbook-visual {
+        padding: 22px;
+    }
+
+    .farmbook-content h2 {
+        font-size: 36px;
+    }
+
+    .mockup-body {
+        padding: 25px 18px;
+    }
+
+}
