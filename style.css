@@ -7,23 +7,24 @@ Ocean Blue & Grey Theme
 /* 1. ROOT VARIABLES */
 
 :root {
-–primary: #087EA4;
-–primary-dark: #066786;
-–ocean-dark: #063B56;
-–ocean-deep: #042C40;
+–primary: #007FA8;
+–primary-dark: #006687;
+–ocean-dark: #032F46;
+–ocean-deep: #021F30;
 
---grey: #64748B;
---light-grey: #F3F6F8;
---border: #E2E8F0;
+--grey: #475569;
+--light-grey: #E9EFF3;
+--border: #D3DEE5;
 --white: #FFFFFF;
---dark: #1E293B;
---text: #526174;
+--dark: #172B3A;
+--text: #435466;
 --font-main: 'DM Sans', sans-serif;
 --font-heading: 'Manrope', sans-serif;
 --container: 1180px;
---shadow:
-    0 15px 45px rgba(6, 59, 86, 0.08);
+--shadow: 0 15px 45px rgba(3, 47, 70, 0.13);
 --transition: 0.3s ease;
+
+}
 
 }
 
