@@ -5,24 +5,29 @@ Ocean Blue & Grey Theme
 ========================================= */
 
 /* 1. ROOT VARIABLES */
-
 :root {
-–primary: #007FA8;
-–primary-dark: #006687;
-–ocean-dark: #032F46;
-–ocean-deep: #021F30;
+    --primary: #1455A0;
+    --primary-dark: #0B2D5C;
+    --ocean-dark: #0B2D5C;
+    --ocean-deep: #071F42;
 
---grey: #475569;
---light-grey: #E9EFF3;
---border: #D3DEE5;
---white: #FFFFFF;
---dark: #172B3A;
---text: #435466;
---font-main: 'DM Sans', sans-serif;
---font-heading: 'Manrope', sans-serif;
---container: 1180px;
---shadow: 0 15px 45px rgba(3, 47, 70, 0.13);
---transition: 0.3s ease;
+    --grey: #496582;
+    --light-grey: #EDF5FF;
+    --border: #D7E6F7;
+
+    --white: #FFFFFF;
+    --dark: #0B2D5C;
+    --text: #425B78;
+
+    --font-main: 'DM Sans', sans-serif;
+    --font-heading: 'Manrope', sans-serif;
+
+    --container: 1180px;
+
+    --shadow: 0 15px 45px rgba(11, 45, 92, 0.10);
+
+    --transition: 0.3s ease;
+}
 
 }
 
