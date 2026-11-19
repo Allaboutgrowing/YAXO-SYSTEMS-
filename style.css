@@ -1876,3 +1876,88 @@ img {
     }
 
 }
+/* ========================================
+   GLOBAL PREMIUM FINISHING TOUCHES
+======================================== */
+
+/* Navigation */
+
+.nav-links a {
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2878DF;
+}
+
+.nav-links a.active {
+    color: #2878DF;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1455A0, #2878DF);
+    border: none;
+    box-shadow: 0 8px 20px rgba(20, 85, 160, 0.18);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 13px 28px rgba(20, 85, 160, 0.25);
+}
+
+.btn-outline {
+    border: 1.5px solid #1455A0;
+    color: #1455A0;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #1455A0;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+}
+
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Selection colour */
+
+::selection {
+    background: #1455A0;
+    color: #FFFFFF;
+}
+
+/* Floating WhatsApp button */
+
+.whatsapp-float {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 12px 30px rgba(11, 45, 92, 0.22);
+}
+
+/* Accessibility: respect reduced-motion settings */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
