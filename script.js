@@ -1,8 +1,11 @@
-// YAXO-SYSTEMS WEBSITE INTERACTIONS
+/* =================================
+   YAXO-SYSTEMS
+   WEBSITE JAVASCRIPT
+================================= */
 
-document.addEventListener("DOMContentLoaded", function () {
 
-    // MOBILE NAVIGATION
+// MOBILE NAVIGATION
+
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
@@ -10,23 +13,28 @@ if (menuToggle && navLinks) {
 
     menuToggle.addEventListener("click", function () {
 
-        const isOpen = navLinks.classList.toggle("active");
+        navLinks.classList.toggle("active");
 
-        menuToggle.textContent = isOpen ? "✕" : "☰";
+        const isOpen = navLinks.classList.contains("active");
 
         menuToggle.setAttribute("aria-expanded", isOpen);
 
+        menuToggle.innerHTML = isOpen ? "&times;" : "&#9776;";
+
     });
 
-    navLinks.querySelectorAll("a").forEach(link => {
 
-        link.addEventListener("click", function () {
+    // CLOSE MENU AFTER CLICKING A LINK
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
 
             navLinks.classList.remove("active");
 
-            menuToggle.textContent = "☰";
-
             menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.innerHTML = "&#9776;";
 
         });
 
@@ -34,38 +42,48 @@ if (menuToggle && navLinks) {
 
 }
 
-    // CURRENT YEAR IN FOOTER
-    const footer = document.querySelector("footer p");
 
-    if (footer) {
-        footer.textContent =
-            "© " + new Date().getFullYear() +
-            " Yaxo-Systems. All Rights Reserved.";
-    }
+// AUTOMATIC COPYRIGHT YEAR
 
-    // SCROLL REVEAL ANIMATION
-    const revealElements = document.querySelectorAll(
-        ".service-card, .project-card, .solution-card, .section-title"
-    );
+const currentYear = document.getElementById("current-year");
 
-    const observer = new IntersectionObserver(function (entries) {
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
 
-        entries.forEach(function (entry) {
+
+// SCROLL REVEAL ANIMATIONS
+
+const revealElements = document.querySelectorAll(
+    ".service-card, .solution-card, .project-card, .identity-card, .why-item, .contact-item"
+);
+
+if ("IntersectionObserver" in window) {
+
+    const revealObserver = new IntersectionObserver(function(entries) {
+
+        entries.forEach(function(entry) {
 
             if (entry.isIntersecting) {
+
                 entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
+
+                revealObserver.unobserve(entry.target);
+
             }
 
         });
 
     }, {
-        threshold: 0.15
+        threshold: 0.12
     });
 
-    revealElements.forEach(function (element) {
+    revealElements.forEach(function(element) {
+
         element.classList.add("reveal");
-        observer.observe(element);
+
+        revealObserver.observe(element);
+
     });
 
-});
+}
