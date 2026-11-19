@@ -1,89 +1,154 @@
-/* =================================
-   YAXO-SYSTEMS
-   WEBSITE JAVASCRIPT
-================================= */
-
-
 // MOBILE NAVIGATION
 
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const menuToggle = document.getElementById("menuToggle");
 
-if (menuToggle && navLinks) {
+const navLinks = document.getElementById("navLinks");
 
-    menuToggle.addEventListener("click", function () {
 
-        navLinks.classList.toggle("active");
+menuToggle.addEventListener("click", function () {
 
-        const isOpen = navLinks.classList.contains("active");
+    navLinks.classList.toggle("active");
 
-        menuToggle.setAttribute("aria-expanded", isOpen);
+    const isOpen = navLinks.classList.contains("active");
 
-        menuToggle.innerHTML = isOpen ? "&times;" : "&#9776;";
+    menuToggle.innerHTML = isOpen
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+});
+
+
+// CLOSE MENU AFTER CLICKING A LINK
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("active");
+
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+        menuToggle.setAttribute("aria-expanded", "false");
 
     });
 
-
-    // CLOSE MENU AFTER CLICKING A LINK
-
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-        link.addEventListener("click", function() {
-
-            navLinks.classList.remove("active");
-
-            menuToggle.setAttribute("aria-expanded", "false");
-
-            menuToggle.innerHTML = "&#9776;";
-
-        });
-
-    });
-
-}
+});
 
 
 // AUTOMATIC COPYRIGHT YEAR
 
-const currentYear = document.getElementById("current-year");
+const yearElement = document.getElementById("year");
 
-if (currentYear) {
-    currentYear.textContent = new Date().getFullYear();
-}
+yearElement.textContent = new Date().getFullYear();
 
 
-// SCROLL REVEAL ANIMATIONS
+// CONTACT FORM
 
-const revealElements = document.querySelectorAll(
-    ".service-card, .solution-card, .project-card, .identity-card, .why-item, .contact-item"
-);
+const contactForm = document.getElementById("contactForm");
 
-if ("IntersectionObserver" in window) {
+contactForm.addEventListener("submit", function(event) {
 
-    const revealObserver = new IntersectionObserver(function(entries) {
+    event.preventDefault();
 
-        entries.forEach(function(entry) {
+    const name = document.getElementById("name").value.trim();
 
-            if (entry.isIntersecting) {
+    const email = document.getElementById("email").value.trim();
 
-                entry.target.classList.add("visible");
+    const service = document.getElementById("service").value;
 
-                revealObserver.unobserve(entry.target);
+    const message = document.getElementById("message").value.trim();
 
-            }
 
-        });
+    if (!name || !email || !service || !message) {
 
-    }, {
-        threshold: 0.12
+        alert("Please complete all fields before sending.");
+
+        return;
+
+    }
+
+
+    const whatsappMessage =
+
+        "Hello Yaxo-Systems!" +
+
+        "\n\nMy Name: " + name +
+
+        "\nEmail: " + email +
+
+        "\nService: " + service +
+
+        "\n\nProject Details: " + message;
+
+
+    const whatsappURL =
+
+        "https://wa.me/233542408676?text=" +
+
+        encodeURIComponent(whatsappMessage);
+
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+
+// SCROLL ANIMATION
+
+const observerOptions = {
+
+    threshold: 0.15
+
+};
+
+
+const observer = new IntersectionObserver(function(entries) {
+
+    entries.forEach(function(entry) {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+        }
+
     });
 
-    revealElements.forEach(function(element) {
+}, observerOptions);
 
-        element.classList.add("reveal");
 
-        revealObserver.observe(element);
+document.querySelectorAll(
+    ".service-card, .solution-card, .why-card, .process-item"
+).forEach(function(element) {
 
-    });
+    observer.observe(element);
 
-}
+});
+
+
+// HEADER SCROLL EFFECT
+
+window.addEventListener("scroll", function() {
+
+    const header = document.querySelector(".header");
+
+    if (window.scrollY > 50) {
+
+        header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.05)";
+
+    } else {
+
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+
+// CONSOLE MESSAGE
+
+console.log("Yaxo-Systems website successfully loaded.");
+
+console.log("Technology That Moves Business Forward.");
