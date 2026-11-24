@@ -849,7 +849,9 @@ img {
 }
 
 
-/* ---------- FOOTER ---------- */
+/* ========================================
+   FOOTER — YAXO-SYSTEMS
+======================================== */
 
 .footer {
     background: var(--navy);
@@ -859,8 +861,8 @@ img {
 
 .footer-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 70px;
+    grid-template-columns: 1.7fr 1fr 1.2fr 1.2fr;
+    gap: 45px;
     padding-bottom: 60px;
 }
 
@@ -875,6 +877,15 @@ img {
     font-size: 14px;
     line-height: 1.9;
     margin-top: 22px;
+}
+
+.footer-tagline {
+    display: inline-block;
+    margin-top: 15px;
+    color: #8DBBFA;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .footer-links {
@@ -897,13 +908,24 @@ img {
 
 .footer-links a:hover {
     color: #85BDFF;
-    padding-left: 4px;
+    transform: translateX(5px);
+}
+
+.footer-links a i {
+    margin-right: 7px;
 }
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding: 22px 0;
-    text-align: center;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .footer-bottom p {
@@ -911,7 +933,42 @@ img {
     font-size: 12px;
 }
 
+.footer-bottom-content span {
+    color: #8DBBFA;
+    font-size: 12px;
+}
 
+/* TABLET */
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-bottom: 40px;
+    }
+
+    .footer-brand-logo img {
+        width: 180px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 /* ---------- WHATSAPP BUTTON ---------- */
 
 .whatsapp-float {
