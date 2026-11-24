@@ -2614,3 +2614,41 @@ html {
     }
 
 }
+/* ========================================
+   EXPERTISE SECTION ENHANCEMENTS
+======================================== */
+
+.expertise-item {
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.expertise-item:hover {
+    transform: translateX(7px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.expertise-item i {
+    transition: transform 0.3s ease;
+}
+
+.expertise-item:hover i {
+    transform: scale(1.12);
+}
+
+.expertise-content p {
+    line-height: 1.9;
+    max-width: 520px;
+}
+
+@media (max-width: 768px) {
+
+    .expertise-content {
+        margin-bottom: 35px;
+    }
+
+    .expertise-item {
+        padding: 16px;
+    }
+
+}
