@@ -2260,3 +2260,76 @@ html {
         #3B8BFA
     );
 }
+/* ========================================
+   FOUNDER SECTION
+======================================== */
+
+.founder {
+    background: #F0F6FF;
+}
+
+.founder-container {
+    display: grid;
+    grid-template-columns: 0.35fr 1.65fr;
+    align-items: center;
+    gap: 45px;
+    max-width: 950px;
+}
+
+.founder-icon {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1455A0, #2878DF);
+    color: #FFFFFF;
+    border-radius: 25px;
+    font-size: 55px;
+    box-shadow: 0 15px 35px rgba(11, 45, 92, 0.15);
+}
+
+.founder-content h2 {
+    font-family: var(--font-heading);
+    color: var(--navy);
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+.founder-content h2 span {
+    color: var(--blue);
+}
+
+.founder-content h3 {
+    color: var(--royal);
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.founder-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.founder-name {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--navy);
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .founder-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .founder-icon {
+        width: 95px;
+        height: 95px;
+        font-size: 40px;
+    }
+}
