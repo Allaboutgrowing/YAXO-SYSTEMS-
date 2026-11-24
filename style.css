@@ -2478,3 +2478,93 @@ html {
     }
 
 }
+/* ========================================
+   HUB 01 PROJECT SHOWCASE
+======================================== */
+
+.hub01-card {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.hub01-card .project-hub01-visual {
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.hub01-icon {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.hub01-card .project-visual span {
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hub01-card .project-visual small {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    opacity: 0.85;
+}
+
+.hub01-card .project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hub01-card .project-status i {
+    font-size: 7px;
+}
+
+.hub01-capabilities {
+    margin-top: 22px;
+    display: grid;
+    gap: 12px;
+}
+
+.hub01-capabilities strong {
+    color: #0B2D5C;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.hub01-capabilities div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #F3F7FC;
+    border-radius: 10px;
+    color: #334155;
+    font-size: 13px;
+}
+
+.hub01-capabilities i {
+    color: #2878DF;
+    font-size: 16px;
+}
+
+.hub01-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-top: 1px solid #E8EEF5;
+    margin-top: 22px;
+    padding-top: 16px;
+    font-size: 11px;
+    color: #64748B;
+}
+
+.hub01-footer span:last-child {
+    color: #1455A0;
+    font-weight: 800;
+}
