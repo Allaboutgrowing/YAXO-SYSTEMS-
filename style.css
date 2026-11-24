@@ -2794,3 +2794,52 @@ html {
     }
 
 }
+/* ========================================
+   FOOTER UPGRADE
+======================================== */
+
+.footer-tagline {
+    display: inline-block;
+    margin-top: 15px;
+    color: #8DBBFA;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #8DBBFA;
+    transform: translateX(5px);
+}
+
+.footer-links a i {
+    margin-right: 7px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-bottom-content span {
+    color: #8DBBFA;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-tagline {
+        font-size: 10px;
+    }
+}
