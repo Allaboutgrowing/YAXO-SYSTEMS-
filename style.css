@@ -2239,3 +2239,24 @@ html {
     }
 
 }
+/* ========================================
+   PROJECT VISUAL IDENTITIES
+======================================== */
+
+.project-farmbook-visual {
+    background: linear-gradient(
+        135deg,
+        #0B2D5C,
+        #1455A0,
+        #2878DF
+    );
+}
+
+.project-hub01-visual {
+    background: linear-gradient(
+        135deg,
+        #102D50,
+        #1455A0,
+        #3B8BFA
+    );
+}
