@@ -4296,3 +4296,196 @@ button {
     }
 
 }
+/* =====================================
+   INNOVATION SECTION
+===================================== */
+
+.innovation {
+    background: #f4f7fc;
+    padding: 100px 0;
+}
+
+.innovation-panel {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 40px;
+    padding: 75px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #071a36, #0b3265);
+    color: #ffffff;
+}
+
+.innovation-content {
+    position: relative;
+    z-index: 2;
+}
+
+.innovation-content .eyebrow {
+    color: #8dbbff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.innovation-content h2 {
+    margin: 22px 0;
+    max-width: 650px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.innovation-content h2 span {
+    display: block;
+    color: #8dbbff;
+}
+
+.innovation-content p {
+    max-width: 570px;
+    margin-bottom: 30px;
+    color: #c5d3e7;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.innovation-content .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.innovation-visual {
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innovation-orbit {
+    position: absolute;
+    border: 1px solid rgba(141, 187, 255, 0.3);
+    border-radius: 50%;
+}
+
+.orbit-one {
+    width: 260px;
+    height: 260px;
+}
+
+.orbit-two {
+    width: 340px;
+    height: 340px;
+    border-style: dashed;
+    animation: innovationRotate 35s linear infinite;
+}
+
+.innovation-core {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ffffff, #c9ddfa);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    transform: rotate(-8deg);
+}
+
+.innovation-core span {
+    color: #0b3265;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.innovation-label {
+    position: absolute;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.09);
+    color: #ffffff;
+    font-size: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.innovation-label span {
+    margin-right: 7px;
+    color: #8dbbff;
+    font-weight: 800;
+}
+
+.label-one {
+    top: 25px;
+    right: 15px;
+}
+
+.label-two {
+    bottom: 45px;
+    left: 0;
+}
+
+.label-three {
+    bottom: 5px;
+    right: 15px;
+}
+
+@keyframes innovationRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .innovation-panel {
+        grid-template-columns: 1fr;
+        padding: 55px 40px;
+    }
+
+    .innovation-visual {
+        min-height: 330px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .innovation {
+        padding: 65px 0;
+    }
+
+    .innovation-panel {
+        padding: 40px 24px;
+        border-radius: 20px;
+    }
+
+    .innovation-content h2 {
+        font-size: 32px;
+    }
+
+    .innovation-content p {
+        font-size: 14px;
+    }
+
+    .innovation-visual {
+        min-height: 290px;
+        transform: scale(0.85);
+    }
+
+    .orbit-one {
+        width: 220px;
+        height: 220px;
+    }
+
+    .orbit-two {
+        width: 285px;
+        height: 285px;
+    }
+}
