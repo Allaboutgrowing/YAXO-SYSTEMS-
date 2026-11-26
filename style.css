@@ -1478,3 +1478,28 @@ animation-duration: 0.01ms !important;
 transition-duration: 0.01ms !important;
 }
 }
+/* =========================================
+   YAXO-SYSTEMS PROJECTS SECTION
+========================================= */
+
+.projects {
+    background: #f6f8fc;
+}
+
+.projects .section-heading {
+    margin-bottom: 50px;
+}
+
+.projects .project-card {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.projects .project-card:last-child {
+    margin-bottom: 0;
+}
+
+.projects .project-card:hover {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
