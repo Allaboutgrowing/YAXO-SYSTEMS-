@@ -1441,3 +1441,300 @@ textarea:focus-visible {
         border-radius: 22px;
     }
 }
+/* =========================================
+   YAXO-SYSTEMS — STAGE 3
+   COMPANY SECTIONS REFINEMENT
+========================================= */
+
+/* SECTION SPACING */
+
+.about,
+.founder,
+.why-choose,
+.approach {
+    position: relative;
+    padding: 90px 6%;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: #10213d;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    color: #68758a;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background: #ffffff;
+}
+
+.about-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.about-main {
+    padding: 38px;
+    border-radius: 22px;
+    background: #f3f7ff;
+    border: 1px solid #e2ebfa;
+}
+
+.about-main h3 {
+    color: #15366b;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+.about-main p {
+    color: #58677d;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.about-side {
+    display: grid;
+    gap: 18px;
+}
+
+.about-mini-card {
+    padding: 25px;
+    border: 1px solid #e5ecf7;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(20, 60, 120, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(20, 60, 120, 0.11);
+}
+
+.about-mini-card h3,
+.about-mini-card h4 {
+    color: #173b72;
+    margin-bottom: 10px;
+}
+
+.about-mini-card p {
+    color: #68758a;
+    line-height: 1.7;
+}
+
+/* FOUNDER SECTION */
+
+.founder {
+    background: linear-gradient(135deg, #f1f6ff, #ffffff);
+}
+
+.founder-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 35px;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid #e0eafa;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(20, 60, 120, 0.07);
+}
+
+.founder-icon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0d4ca5, #3987e9);
+    color: #ffffff;
+    font-size: 3rem;
+    box-shadow: 0 15px 35px rgba(20, 90, 180, 0.2);
+}
+
+.founder-content h2,
+.founder-content h3 {
+    color: #15366b;
+    margin-bottom: 15px;
+}
+
+.founder-content p {
+    color: #5d6c81;
+    line-height: 1.85;
+    margin-bottom: 12px;
+}
+
+/* WHY CHOOSE US */
+
+.why-choose {
+    background: #ffffff;
+}
+
+.why-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    padding: 30px 25px;
+    border: 1px solid #e5edf8;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(20, 60, 120, 0.05);
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-7px);
+    border-color: #b8d1f5;
+    box-shadow: 0 18px 40px rgba(20, 60, 120, 0.11);
+}
+
+.why-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background: #eaf2ff;
+    color: #1761c5;
+    font-size: 1.5rem;
+}
+
+.why-card h3 {
+    color: #173b72;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: #68758a;
+    line-height: 1.75;
+}
+
+/* OUR APPROACH */
+
+.approach {
+    background: #f5f8fd;
+}
+
+.approach-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.approach-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #e4ebf5;
+    transition: all 0.3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(20, 60, 120, 0.09);
+}
+
+.approach-card h3 {
+    color: #16417f;
+    margin-bottom: 14px;
+}
+
+.approach-card p {
+    color: #65748a;
+    line-height: 1.8;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid,
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .founder-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .about,
+    .founder,
+    .why-choose,
+    .approach {
+        padding: 65px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .about-main {
+        padding: 25px;
+    }
+
+    .about-mini-card {
+        padding: 22px;
+    }
+
+    .founder-container {
+        padding: 28px 22px;
+        gap: 22px;
+    }
+
+    .founder-icon {
+        width: 115px;
+        height: 115px;
+        font-size: 2.4rem;
+    }
+
+    .why-grid,
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-card,
+    .approach-card {
+        padding: 25px;
+    }
+}
