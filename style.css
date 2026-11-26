@@ -1738,3 +1738,249 @@ textarea:focus-visible {
         padding: 25px;
     }
 }
+/* =========================================
+   YAXO-SYSTEMS — STAGE 4
+   PRODUCT SHOWCASE REFINEMENT
+========================================= */
+
+/* FARMBOOK PRODUCT */
+
+.farmbook-product {
+    position: relative;
+    padding: 90px 6%;
+    background: linear-gradient(135deg, #f1f6ff, #ffffff);
+}
+
+.farmbook-header {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.farmbook-header h2 {
+    color: #12366d;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.farmbook-header p {
+    color: #65748a;
+    line-height: 1.8;
+}
+
+.farmbook-status {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    background: #e2f7eb;
+    color: #16834a;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.farmbook-content {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 38px;
+    border: 1px solid #e0eafa;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: 0 20px 55px rgba(20, 60, 120, 0.08);
+}
+
+.farmbook-content h3 {
+    color: #153b76;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.farmbook-content p {
+    color: #65748a;
+    line-height: 1.8;
+}
+
+.farmbook-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.farmbook-features > * {
+    padding: 22px;
+    border: 1px solid #e5edf8;
+    border-radius: 16px;
+    background: #f8faff;
+    transition: all 0.3s ease;
+}
+
+.farmbook-features > *:hover {
+    transform: translateY(-5px);
+    border-color: #b9d2f5;
+    box-shadow: 0 12px 28px rgba(20, 60, 120, 0.08);
+}
+
+.farmbook-features h4 {
+    color: #17427f;
+    margin-bottom: 10px;
+}
+
+.farmbook-features p {
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+.farmbook-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e8edf5;
+}
+
+/* HUB 01 PRODUCT */
+
+.hub01-card {
+    max-width: 1150px;
+    margin: 70px auto 0;
+    overflow: hidden;
+    border: 1px solid #dce7f6;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: 0 20px 55px rgba(20, 60, 120, 0.09);
+}
+
+.project-hub01-visual {
+    position: relative;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 50%,
+        rgba(255,255,255,0.2),
+        transparent 60%),
+        linear-gradient(135deg, #0b3474, #1766c5);
+    color: #ffffff;
+}
+
+.project-hub01-visual h2,
+.project-hub01-visual h3 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.project-hub01-visual p {
+    color: rgba(255,255,255,0.85);
+    margin-top: 12px;
+    line-height: 1.7;
+}
+
+.hub01-card .project-content {
+    padding: 38px;
+}
+
+.hub01-card .project-content h3 {
+    color: #153b76;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.hub01-card .project-content p {
+    color: #65748a;
+    line-height: 1.85;
+}
+
+.hub01-capabilities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.hub01-capabilities > * {
+    padding: 20px;
+    border-radius: 15px;
+    background: #f1f6ff;
+    border: 1px solid #e0eafa;
+    transition: all 0.3s ease;
+}
+
+.hub01-capabilities > *:hover {
+    transform: translateY(-4px);
+    background: #e8f1ff;
+}
+
+.hub01-capabilities h4 {
+    color: #17427f;
+    margin-bottom: 9px;
+}
+
+.hub01-capabilities p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.hub01-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e8edf5;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .farmbook-features,
+    .hub01-capabilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .farmbook-product {
+        padding: 65px 5%;
+    }
+
+    .farmbook-content {
+        padding: 25px 20px;
+    }
+
+    .farmbook-features,
+    .hub01-capabilities {
+        grid-template-columns: 1fr;
+    }
+
+    .farmbook-footer,
+    .hub01-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hub01-card {
+        margin-top: 45px;
+        border-radius: 20px;
+    }
+
+    .project-hub01-visual {
+        min-height: 210px;
+    }
+
+    .hub01-card .project-content {
+        padding: 25px 20px;
+    }
+}
