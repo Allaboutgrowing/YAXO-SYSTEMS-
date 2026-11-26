@@ -2664,3 +2664,171 @@ textarea:focus-visible {
         bottom: 16px;
     }
 }
+/* =========================================
+   YAXO-SYSTEMS — STAGE 8
+   FINAL POLISH & OPTIMISATION
+========================================= */
+
+/* GLOBAL REFINEMENT */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    transition: color 0.25s ease;
+}
+
+/* CONSISTENT SECTION HEADINGS */
+
+.section-heading h2,
+.section-heading h3 {
+    letter-spacing: -0.8px;
+}
+
+.section-heading p {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CONSISTENT INTERACTION */
+
+.service-card,
+.why-card,
+.approach-card,
+.project-card,
+.about-mini-card,
+.farmbook-content,
+.hub01-card {
+    will-change: transform;
+}
+
+/* BUTTON REFINEMENT */
+
+.btn,
+.button,
+.hero-buttons a,
+.contact-form button {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.btn:active,
+.button:active,
+.hero-buttons a:active {
+    transform: scale(0.97);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #5c9bea;
+    outline-offset: 4px;
+}
+
+/* TEXT SELECTION */
+
+::selection {
+    background: #1765c5;
+    color: #ffffff;
+}
+
+/* RESPONSIVE IMAGES AND MEDIA */
+
+video,
+iframe {
+    max-width: 100%;
+}
+
+video {
+    display: block;
+}
+
+/* MOBILE OPTIMISATION */
+
+@media (max-width: 650px) {
+    html {
+        scroll-padding-top: 75px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    section {
+        scroll-margin-top: 75px;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .section-heading p {
+        font-size: 0.95rem;
+    }
+
+    .hero,
+    .about,
+    .founder,
+    .why-choose,
+    .approach,
+    .services,
+    .expertise,
+    .contact {
+        overflow: hidden;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        font-size: 16px;
+    }
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
