@@ -1485,3 +1485,629 @@ button {
         transition-duration: 0.01ms !important;
     }
 }
+/* =========================================
+   PREMIUM HEADER & HERO REDESIGN
+========================================= */
+
+
+/* HEADER */
+
+.header {
+    height: 86px;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #E8EEF5;
+    backdrop-filter: blur(18px);
+}
+
+.navbar {
+    height: 100%;
+}
+
+.brand {
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 45px;
+    height: 45px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
+.brand-text strong {
+    font-family: "Manrope", sans-serif;
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: #0B2D5C;
+    font-weight: 800;
+}
+
+.brand-text small {
+    color: #2878DF;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+.navigation {
+    gap: 25px;
+}
+
+.navigation a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #30435B;
+}
+
+.navigation a:hover {
+    color: #2878DF;
+}
+
+.navigation .nav-contact {
+    padding: 13px 19px;
+    border-radius: 5px;
+    background: #0B2D5C;
+    color: #FFFFFF;
+}
+
+.navigation .nav-contact span {
+    margin-left: 7px;
+}
+
+.navigation .nav-contact:hover {
+    background: #2878DF;
+}
+
+
+/* HERO BACKGROUND */
+
+.hero {
+    min-height: 690px;
+    padding: 105px 0 100px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 82% 45%,
+            rgba(40, 120, 223, 0.11),
+            transparent 32%
+        ),
+        linear-gradient(115deg, #FFFFFF 0%, #F4F8FD 100%);
+}
+
+.hero-background-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.28;
+    pointer-events: none;
+    background-image:
+        linear-gradient(#D8E5F4 1px, transparent 1px),
+        linear-gradient(90deg, #D8E5F4 1px, transparent 1px);
+    background-size: 55px 55px;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black,
+        transparent
+    );
+}
+
+.hero-grid {
+    position: relative;
+    z-index: 2;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 75px;
+    align-items: center;
+}
+
+
+/* HERO CONTENT */
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 13px;
+    border: 1px solid #DCE8F6;
+    background: #FFFFFF;
+    border-radius: 4px;
+    color: #31577F;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 28px;
+}
+
+.hero-label-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #2878DF;
+    box-shadow: 0 0 0 4px #E6F1FF;
+}
+
+.hero-content h1 {
+    font-size: clamp(45px, 5.4vw, 68px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -3.5px;
+    color: #0B1F3A;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: #2878DF;
+}
+
+.hero-description {
+    max-width: 540px;
+    color: #61738A;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    gap: 14px;
+}
+
+.hero-buttons .btn {
+    min-height: 54px;
+    border-radius: 5px;
+    padding: 0 23px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.hero-buttons .btn-primary {
+    background: #0B2D5C;
+    box-shadow: 0 8px 20px rgba(11, 45, 92, 0.14);
+}
+
+.hero-buttons .btn-primary:hover {
+    background: #2878DF;
+}
+
+.hero-buttons .btn-primary span {
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.hero-buttons .btn-outline {
+    border-color: #CBD8E8;
+    background: transparent;
+}
+
+.hero-buttons .btn-outline:hover {
+    background: #FFFFFF;
+}
+
+.hero-trust {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 42px;
+}
+
+.trust-line {
+    width: 35px;
+    height: 2px;
+    background: #2878DF;
+}
+
+.hero-trust p {
+    color: #718198;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* HERO VISUAL */
+
+.hero-visual {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-visual-glow {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    background: rgba(40, 120, 223, 0.1);
+    filter: blur(45px);
+}
+
+.hero-main-card {
+    position: relative;
+    width: 390px;
+    max-width: 100%;
+    min-height: 450px;
+    padding: 26px;
+    border-radius: 13px;
+    background: linear-gradient(
+        145deg,
+        #0A2448,
+        #104A88 65%,
+        #1766B6
+    );
+    box-shadow: 0 30px 70px rgba(7, 29, 59, 0.22);
+    z-index: 2;
+}
+
+.hero-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-card-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.hero-card-mark {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.hero-card-brand div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-card-brand strong {
+    color: #FFFFFF;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+}
+
+.hero-card-brand small {
+    color: #9CBFE7;
+    font-size: 7px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.hero-card-index {
+    color: #8DB7E8;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* GRAPHIC */
+
+.hero-graphic {
+    height: 215px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.graphic-ring {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+}
+
+.ring-one {
+    width: 190px;
+    height: 190px;
+}
+
+.ring-two {
+    width: 145px;
+    height: 145px;
+}
+
+.ring-three {
+    width: 100px;
+    height: 100px;
+    border-color: rgba(135, 190, 255, 0.5);
+}
+
+.graphic-core {
+    width: 76px;
+    height: 76px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(145deg, #FFFFFF, #B9D8FF);
+    box-shadow: 0 0 40px rgba(135, 190, 255, 0.25);
+    transform: rotate(45deg);
+}
+
+.graphic-core span {
+    color: #0B2D5C;
+    font-size: 44px;
+    font-weight: 800;
+    transform: rotate(-45deg);
+}
+
+.graphic-node {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #91C5FF;
+    box-shadow: 0 0 15px #91C5FF;
+}
+
+.node-one {
+    top: 22px;
+    left: 48%;
+}
+
+.node-two {
+    right: 68px;
+    top: 90px;
+}
+
+.node-three {
+    bottom: 18px;
+    left: 30%;
+}
+
+.node-four {
+    left: 65px;
+    top: 100px;
+}
+
+
+/* CARD CAPTION */
+
+.hero-card-caption {
+    padding-top: 8px;
+}
+
+.hero-card-caption > span {
+    color: #91BDEB;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-card-caption h3 {
+    color: #FFFFFF;
+    font-size: 23px;
+    margin: 9px 0;
+}
+
+.hero-card-caption p {
+    color: #BBD2EE;
+    font-size: 11px;
+}
+
+.hero-card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+    margin-top: 24px;
+    padding-top: 17px;
+}
+
+.hero-card-footer span {
+    color: #A9C8EC;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+/* FLOATING CARDS */
+
+.hero-floating-card {
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 17px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #E5EDF7;
+    box-shadow: 0 12px 35px rgba(11, 45, 92, 0.1);
+}
+
+.hero-floating-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-floating-card strong {
+    color: #0B2D5C;
+    font-size: 11px;
+}
+
+.hero-floating-card small {
+    color: #8492A5;
+    font-size: 9px;
+    margin-top: 3px;
+}
+
+.floating-icon {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    background: #EAF3FF;
+    color: #2878DF;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.floating-one {
+    top: 75px;
+    right: -25px;
+}
+
+.floating-two {
+    bottom: 55px;
+    left: -35px;
+}
+
+.hero-bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        #0B2D5C,
+        #2878DF,
+        #A7CEFF
+    );
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .hero-grid {
+        gap: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 52px;
+    }
+
+    .hero-main-card {
+        width: 350px;
+    }
+
+    .navigation {
+        gap: 14px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 74px;
+    }
+
+    .navigation {
+        top: 74px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand-text strong {
+        font-size: 19px;
+    }
+
+    .hero {
+        padding: 75px 0 85px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(40px, 9vw, 53px);
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-visual {
+        min-height: 470px;
+    }
+
+    .hero-main-card {
+        width: 370px;
+    }
+
+    .floating-one {
+        right: -5px;
+    }
+
+    .floating-two {
+        left: -5px;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 60px 0 70px;
+    }
+
+    .hero-label {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content h1 {
+        font-size: 39px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-visual {
+        min-height: 420px;
+    }
+
+    .hero-main-card {
+        width: 100%;
+        min-height: 420px;
+        padding: 20px;
+    }
+
+    .hero-graphic {
+        height: 190px;
+    }
+
+    .floating-one {
+        top: 5px;
+        right: -4px;
+    }
+
+    .floating-two {
+        bottom: 0;
+        left: -4px;
+    }
+
+}
