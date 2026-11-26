@@ -1,1236 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<title>Yaxo-Systems | Technology, Software & Digital Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Yaxo-Systems develops websites, applications and digital business systems, alongside IT support, digital marketing and cybersecurity-focused solutions.">
+    <title>Yaxo-Systems | Enterprise Technology Solutions</title>
 
-<meta name="keywords" content="Yaxo-Systems, software development, website development, application development, digital business systems, IT support, digital marketing, cybersecurity">
+    <meta name="description" content="Yaxo-Systems is a technology company building digital platforms, business systems, software solutions and technology infrastructure.">
 
-<meta name="author" content="Yaxo-Systems">
+    <meta name="theme-color" content="#0B2D5C">
 
-<meta name="robots" content="index, follow">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="theme-color" content="#0B2D5C">
-
-<!-- SOCIAL MEDIA SHARING -->
-
-<meta property="og:type" content="website">
-
-<meta property="og:title" content="Yaxo-Systems | Engineering Digital Possibilities">
-
-<meta property="og:description" content="Building practical digital solutions for businesses through technology, innovation and development.">
-
-<meta property="og:image" content="yaxo-logo.svg">
-
-<meta property="og:site_name" content="Yaxo-Systems">
-
-<meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="Yaxo-Systems | Engineering Digital Possibilities">
-
-<meta name="twitter:description" content="Technology, software development and digital business solutions.">
-
-<meta name="twitter:image" content="yaxo-logo.svg">
-
-    <!-- Company Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- HEADER -->
+<header class="header">
+    <div class="container navbar">
 
-    <header class="header">
+        <a href="#home" class="brand">
+            <img src="yaxo-logo.svg" alt="Yaxo-Systems Logo" class="brand-logo">
+            <span class="brand-name">Yaxo-Systems</span>
+        </a>
 
-        <div class="container navbar">
-            <a href="#home" class="brand" aria-label="Yaxo-Systems Home">
-    <img src="./yaxo-logo.svg" alt="Yaxo-Systems Logo" class="brand-logo">
-    <span class="brand-name">Yaxo-Systems</span>
-</a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-            <nav class="navigation" id="mainNav">
-                <a href="#founder" class="nav-link">Founder</a>
+        <nav class="navigation" id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#projects">Projects</a>
+            <a href="#founder">Founder</a>
+            <a href="#contact" class="nav-contact">Contact Us</a>
+        </nav>
 
-                <a href="#home" class="nav-link active">Home</a>
+    </div>
+</header>
 
-                <a href="#about" class="nav-link">About</a>
 
-                <a href="#services" class="nav-link">Services</a>
-
-                <a href="#expertise" class="nav-link">Expertise</a>
-
-                <a href="#projects" class="nav-link">Projects</a>
-
-                <a href="#contact" class="nav-contact">
-                    Let's Talk <i class="fas fa-arrow-right"></i>
-                </a>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-    <!-- ================= HERO SECTION ================= -->
-
+<!-- HERO SECTION -->
 <section class="hero" id="home">
-
-    <div class="container hero-container">
+    <div class="container hero-grid">
 
         <div class="hero-content">
 
             <span class="eyebrow">
-                TECHNOLOGY. INNOVATION. POSSIBILITY.
+                TECHNOLOGY • INNOVATION • DIGITAL GROWTH
             </span>
 
             <h1>
-                Engineering
-                <span>Digital Possibilities.</span>
+                Building Technology
+                <span>That Moves Businesses Forward.</span>
             </h1>
 
             <p>
-                Yaxo-Systems develops practical digital solutions,
-                software applications and intelligent business systems
-                designed to help organisations work smarter and grow.
+                Yaxo-Systems develops digital solutions, business platforms
+                and technology infrastructure that help organisations
+                operate smarter, grow efficiently and prepare for the future.
             </p>
 
             <div class="hero-buttons">
-
-                <a href="#projects" class="btn btn-primary">
-                    Explore Our Work
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-
-                <a href="#contact" class="btn btn-outline">
+                <a href="#contact" class="btn btn-primary">
                     Work With Us
                 </a>
 
+                <a href="#projects" class="btn btn-outline">
+                    Explore Our Work
+                </a>
             </div>
 
             <div class="hero-note">
                 <span class="status-dot"></span>
-                Building practical technology for real-world needs.
+                Building practical technology for real-world challenges.
             </div>
 
         </div>
+
 
         <div class="hero-visual">
 
-            <div class="hero-card">
-
-                <div class="visual-icon">
-                    <i class="fas fa-microchip"></i>
+            <div class="hero-main-card">
+                <div class="card-top">
+                    <span class="card-indicator"></span>
+                    <span>YAXO SYSTEMS</span>
                 </div>
 
-                <h3>Technology Built Around Possibility.</h3>
+                <div class="hero-symbol">
+                    <span>Y</span>
+                </div>
+
+                <h3>Technology With Purpose.</h3>
 
                 <p>
-                    From digital platforms to business systems,
-                    we turn ideas into practical technology solutions.
+                    Digital systems. Intelligent solutions.
+                    Sustainable innovation.
                 </p>
 
-                <div class="visual-divider"></div>
-
-                <div class="visual-features">
-
-                    <span>
-                        <i class="fas fa-globe"></i>
-                        Web Development
-                    </span>
-
-                    <span>
-                        <i class="fas fa-code"></i>
-                        Software Solutions
-                    </span>
-
-                    <span>
-                        <i class="fas fa-chart-line"></i>
-                        Digital Business Systems
-                    </span>
-
+                <div class="hero-card-bottom">
+                    <span>BUILD</span>
+                    <span>INNOVATE</span>
+                    <span>GROW</span>
                 </div>
-
             </div>
 
-            <div class="floating-element floating-one">
-                <i class="fas fa-code"></i>
+            <div class="floating-card floating-one">
+                <strong>01</strong>
+                <span>Digital Solutions</span>
             </div>
 
-            <div class="floating-element floating-two">
-                <i class="fas fa-cloud"></i>
+            <div class="floating-card floating-two">
+                <strong>02</strong>
+                <span>Business Systems</span>
             </div>
 
         </div>
 
     </div>
-
 </section>
-        <!-- ================= COMPANY INTRODUCTION ================= -->
 
-        <section class="company-intro">
 
-            <div class="container">
+<!-- COMPANY INTRODUCTION -->
+<section class="company-intro">
+    <div class="container intro-content">
 
-                <p>
-                    Yaxo-Systems is a technology-driven business focused
-                    on developing digital solutions, software and systems
-                    that address real-world business challenges.
-                </p>
+        <span class="eyebrow">WHO WE ARE</span>
 
-            </div>
+        <h2>
+            A technology company focused on
+            <span>solving real problems.</span>
+        </h2>
 
-        </section>
+        <p>
+            We combine software development, digital innovation and
+            practical technology solutions to create systems that
+            support businesses, institutions and growing organisations.
+        </p>
 
-        <!-- ================= ABOUT SECTION ================= -->
-<section class="about section-padding" id="about">
+    </div>
+</section>
 
+
+<!-- ABOUT -->
+<section class="section-padding about" id="about">
     <div class="container">
 
         <div class="section-heading">
-
-            <span class="section-label">WHO WE ARE</span>
+            <span class="eyebrow">ABOUT YAXO-SYSTEMS</span>
 
             <h2>
-                Technology with
-                <span>Purpose.</span>
+                Technology designed around
+                <span>real business needs.</span>
             </h2>
 
             <p>
-                Yaxo-Systems is a technology business focused on
-                developing practical digital solutions, software
-                applications and intelligent systems that address
-                real-world challenges.
+                Our goal is to make technology useful, accessible and
+                valuable to the people and organisations that depend on it.
             </p>
-
         </div>
+
 
         <div class="about-grid">
 
-            <div class="about-main">
+            <div class="about-card about-main">
+                <div class="card-icon">01</div>
 
-                <div class="about-icon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
-
-                <h3>Our Approach</h3>
+                <h3>Who We Are</h3>
 
                 <p>
-                    We believe meaningful innovation begins with
-                    understanding real problems. Our approach
-                    combines creativity, continuous learning and
-                    practical problem-solving to develop technology
-                    that supports businesses and creates value.
+                    Yaxo-Systems is a technology business focused on
+                    developing digital platforms, software applications,
+                    business systems and technology services.
                 </p>
 
+                <p>
+                    We believe technology should do more than look impressive.
+                    It should solve problems, improve operations and create
+                    opportunities for growth.
+                </p>
             </div>
 
-            <div class="about-side">
 
-                <div class="about-mini-card">
+            <div class="about-card">
+                <div class="card-icon">02</div>
 
-                    <i class="fas fa-bullseye"></i>
+                <h3>Our Mission</h3>
 
-                    <div>
-                        <h3>Our Mission</h3>
+                <p>
+                    To develop reliable and practical technology solutions
+                    that improve how businesses and organisations work.
+                </p>
+            </div>
 
-                        <p>
-                            To develop accessible, reliable and
-                            useful technology solutions that help
-                            businesses and individuals move forward.
-                        </p>
-                    </div>
 
-                </div>
+            <div class="about-card">
+                <div class="card-icon">03</div>
 
-                <div class="about-mini-card">
+                <h3>Our Vision</h3>
 
-                    <i class="fas fa-eye"></i>
-
-                    <div>
-                        <h3>Our Vision</h3>
-
-                        <p>
-                            To grow into a trusted technology company
-                            contributing to digital innovation and
-                            sustainable development.
-                        </p>
-                    </div>
-
-                </div>
-
+                <p>
+                    To grow into a trusted technology company delivering
+                    impactful digital products and services across markets.
+                </p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
-      <!-- FOUNDER SECTION -->
 
-<section class="founder section-padding" id="founder">
+<!-- FOUNDER -->
+<section class="section-padding founder" id="founder">
+    <div class="container founder-grid">
 
-    <div class="container founder-container">
-
-        <div class="founder-icon">
-            <i class="fas fa-user-tie"></i>
+        <div class="founder-visual">
+            <div class="founder-monogram">Y</div>
+            <span>FOUNDER & TECHNOLOGY DEVELOPER</span>
         </div>
 
         <div class="founder-content">
 
-            <span class="section-label">LEADERSHIP</span>
+            <span class="eyebrow">LEADERSHIP</span>
 
-            <h2>Building Technology with <span>Purpose.</span></h2>
-
-            <h3>Founder & Junior Technology Developer</h3>
+            <h2>
+                Building with vision.
+                <span>Developing with purpose.</span>
+            </h2>
 
             <p>
-                Yaxo-Systems is led by its founder, who is passionate
-                about software development, digital innovation and
-                building practical technology solutions.
+                Yaxo-Systems is led by its founder, Yaya Mohammed,
+                a technology developer focused on software development,
+                digital platforms and practical technology solutions.
             </p>
 
             <p>
-                With a growing foundation in software development and
-                cybersecurity studies, the focus is on creating useful
-                digital products, developing technical skills and
-                delivering solutions that address real-world needs.
+                His approach is centred on continuous learning,
+                problem-solving and building technology that can
+                create meaningful value for businesses and communities.
             </p>
 
-            <span class="founder-name">Yaxo-Systems Leadership</span>
+            <div class="founder-signature">
+                <strong>Yaya Mohammed</strong>
+                <span>Founder, Yaxo-Systems</span>
+            </div>
 
         </div>
 
     </div>
+</section>
 
-</section>  
-     <!-- WHY CHOOSE YAXO-SYSTEMS -->
-<section class="why-choose section-padding" id="why-us">
+
+<!-- WHY CHOOSE US -->
+<section class="section-padding why-choose" id="why-us">
     <div class="container">
 
         <div class="section-heading">
-            <span class="section-tag">WHY WORK WITH US</span>
-            <h2>Technology Built Around Your Goals.</h2>
+            <span class="eyebrow">OUR COMMITMENT</span>
+
+            <h2>
+                Why work with
+                <span>Yaxo-Systems?</span>
+            </h2>
+
             <p>
-                We combine technical thinking, practical solutions
-                and a commitment to helping businesses grow through technology.
+                We approach every project with a focus on usefulness,
+                reliability and long-term value.
             </p>
         </div>
+
 
         <div class="why-grid">
 
             <div class="why-card">
-                <div class="why-icon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
-                <h3>Innovation</h3>
+                <div class="card-icon">01</div>
+                <h3>Practical Innovation</h3>
                 <p>
-                    We explore modern technologies and practical ideas
-                    to solve real business challenges.
+                    We focus on technology that addresses actual needs
+                    instead of building solutions without purpose.
                 </p>
             </div>
 
             <div class="why-card">
-                <div class="why-icon">
-                    <i class="fas fa-bullseye"></i>
-                </div>
-                <h3>Client-Focused Solutions</h3>
+                <div class="card-icon">02</div>
+                <h3>Business Understanding</h3>
                 <p>
-                    We consider each client's objectives and build
-                    solutions around their specific needs.
+                    We consider business operations and objectives
+                    when developing digital solutions.
                 </p>
             </div>
 
             <div class="why-card">
-                <div class="why-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>Security Awareness</h3>
+                <div class="card-icon">03</div>
+                <h3>Growth Mindset</h3>
                 <p>
-                    We consider security, reliability and responsible
-                    technology practices throughout development.
+                    We build with improvement, scalability and
+                    future development in mind.
                 </p>
             </div>
 
             <div class="why-card">
-                <div class="why-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Growth-Oriented Thinking</h3>
+                <div class="card-icon">04</div>
+                <h3>Technology Focus</h3>
                 <p>
-                    We aim to create digital solutions that can adapt
-                    as businesses evolve and expand.
+                    We continuously develop our technical capabilities
+                    to respond to changing digital needs.
                 </p>
             </div>
 
         </div>
+
     </div>
 </section>
-       <!-- OUR TECHNOLOGY APPROACH -->
-<section class="approach section-padding" id="approach">
+
+
+<!-- APPROACH -->
+<section class="section-padding approach" id="approach">
     <div class="container">
 
         <div class="section-heading">
-            <span class="section-tag">HOW WE WORK</span>
-            <h2>From Ideas to Digital Solutions.</h2>
-            <p>
-                Our approach combines thoughtful planning,
-                technical development and continuous improvement
-                to create practical digital solutions.
-            </p>
+            <span class="eyebrow">HOW WE WORK</span>
+
+            <h2>
+                From identifying problems
+                <span>to building solutions.</span>
+            </h2>
         </div>
+
 
         <div class="approach-grid">
 
-            <div class="approach-card">
-                <span class="approach-number">01</span>
-                <div class="approach-icon">
-                    <i class="fas fa-search"></i>
-                </div>
+            <div class="approach-step">
+                <span>01</span>
                 <h3>Understand</h3>
-                <p>
-                    We identify your business needs, challenges
-                    and objectives before defining a solution.
-                </p>
+                <p>We identify the challenge, requirements and objectives.</p>
             </div>
 
-            <div class="approach-card">
-                <span class="approach-number">02</span>
-                <div class="approach-icon">
-                    <i class="fas fa-sitemap"></i>
-                </div>
-                <h3>Plan & Design</h3>
-                <p>
-                    We develop a clear solution strategy,
-                    structure and development direction.
-                </p>
+            <div class="approach-step">
+                <span>02</span>
+                <h3>Plan</h3>
+                <p>We define the structure, priorities and development process.</p>
             </div>
 
-            <div class="approach-card">
-                <span class="approach-number">03</span>
-                <div class="approach-icon">
-                    <i class="fas fa-code"></i>
-                </div>
+            <div class="approach-step">
+                <span>03</span>
                 <h3>Develop</h3>
-                <p>
-                    We build digital solutions with attention
-                    to functionality, usability and security.
-                </p>
+                <p>We build and refine the solution around its intended purpose.</p>
             </div>
 
-            <div class="approach-card">
-                <span class="approach-number">04</span>
-                <div class="approach-icon">
-                    <i class="fas fa-vial"></i>
-                </div>
-                <h3>Test & Refine</h3>
-                <p>
-                    We evaluate functionality, identify issues
-                    and improve the solution before deployment.
-                </p>
-            </div>
-
-            <div class="approach-card">
-                <span class="approach-number">05</span>
-                <div class="approach-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h3>Deploy & Support</h3>
-                <p>
-                    We prepare solutions for deployment and
-                    provide support based on agreed requirements.
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section> 
-    <!-- FARMBOOK PRODUCT SHOWCASE -->
-
-<article class="product farmbook-product">
-
-    <div class="farmbook-header">
-
-        <div class="farmbook-icon">
-            <i class="fas fa-seedling"></i>
-        </div>
-
-        <span class="farmbook-status">
-            <i class="fas fa-check-circle"></i>
-            V1 PROTOTYPE COMPLETED
-        </span>
-
-    </div>
-
-    <div class="farmbook-content">
-
-        <span class="tag">AGRICULTURAL TECHNOLOGY • AGRITECH</span>
-
-        <h3>FarmBook</h3>
-
-        <p class="farmbook-description">
-            A smart agricultural management application designed
-            to help farmers organize livestock, crop production,
-            animal health records, farm activities, sales and
-            expenses through one digital platform.
-        </p>
-
-        <div class="farmbook-features-heading">
-            <i class="fas fa-layer-group"></i>
-            <strong>Core Features</strong>
-        </div>
-
-        <div class="farmbook-features">
-
-            <div class="farmbook-feature">
-                <i class="fas fa-cow"></i>
-                <span>Livestock Management</span>
-            </div>
-
-            <div class="farmbook-feature">
-                <i class="fas fa-leaf"></i>
-                <span>Crop Management</span>
-            </div>
-
-            <div class="farmbook-feature">
-                <i class="fas fa-heartbeat"></i>
-                <span>Animal Health Records</span>
-            </div>
-
-            <div class="farmbook-feature">
-                <i class="fas fa-clipboard-list"></i>
-                <span>Farm Records</span>
-            </div>
-
-            <div class="farmbook-feature">
-                <i class="fas fa-wallet"></i>
-                <span>Sales & Expense Tracking</span>
-            </div>
-
-            <div class="farmbook-feature">
-                <i class="fas fa-chart-line"></i>
-                <span>Farm Reports & Analytics</span>
+            <div class="approach-step">
+                <span>04</span>
+                <h3>Improve</h3>
+                <p>We focus on testing, maintenance and future improvements.</p>
             </div>
 
         </div>
 
     </div>
+</section>
 
-    <div class="farmbook-footer">
 
-        <span>
-            <i class="fas fa-code"></i>
-            Developed by Yaxo-Systems
-        </span>
-
-        <span class="farmbook-version">VERSION 1.0</span>
-
-    </div>
-
-</article>
-
-  <!-- ================= SERVICES SECTION ================= -->
-
-<section class="services section-padding" id="services">
-
+<!-- SERVICES -->
+<section class="section-padding services" id="services">
     <div class="container">
 
         <div class="section-heading">
-
-            <span class="section-label">WHAT WE DO</span>
+            <span class="eyebrow">WHAT WE DO</span>
 
             <h2>
-                Technology Solutions for
-                <span>Real-World Needs.</span>
+                Our Technology
+                <span>Services.</span>
             </h2>
 
             <p>
-                We combine technology, creativity and practical
-                problem-solving to help businesses establish,
-                improve and strengthen their digital operations.
+                Technology services designed to help organisations
+                establish, improve and expand their digital capabilities.
             </p>
-
         </div>
+
 
         <div class="services-grid">
 
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-
+            <article class="service-card">
+                <div class="service-icon">01</div>
                 <h3>Website Development</h3>
-
                 <p>
-                    Modern, responsive websites designed to establish
-                    your online presence, showcase your services
-                    and connect your business with customers.
+                    Professional websites for businesses, organisations
+                    and individuals.
                 </p>
+            </article>
 
-                <span class="service-number">01</span>
-
-            </div>
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fas fa-mobile-screen-button"></i>
-                </div>
-
-                <h3>Application Development</h3>
-
+            <article class="service-card">
+                <div class="service-icon">02</div>
+                <h3>Software & App Development</h3>
                 <p>
-                    Practical web and mobile application solutions
-                    developed around user requirements and
-                    real business objectives.
+                    Development of digital applications and software
+                    solutions for specific needs.
                 </p>
+            </article>
 
-                <span class="service-number">02</span>
-
-            </div>
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fas fa-diagram-project"></i>
-                </div>
-
-                <h3>Digital Business Systems</h3>
-
+            <article class="service-card">
+                <div class="service-icon">03</div>
+                <h3>Business Systems</h3>
                 <p>
-                    Digital platforms and integrated systems
-                    designed to organise business operations,
-                    improve workflows and support efficiency.
+                    Digital tools and integrated systems that support
+                    business processes and operations.
                 </p>
+            </article>
 
-                <span class="service-number">03</span>
-
-            </div>
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fas fa-headset"></i>
-                </div>
-
-                <h3>IT Support & Solutions</h3>
-
+            <article class="service-card">
+                <div class="service-icon">04</div>
+                <h3>IT Support</h3>
                 <p>
-                    Technology assistance, troubleshooting
-                    and practical IT solutions that help
-                    maintain reliable business operations.
+                    Technical support and technology assistance
+                    for business environments.
                 </p>
+            </article>
 
-                <span class="service-number">04</span>
-
-            </div>
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-
+            <article class="service-card">
+                <div class="service-icon">05</div>
                 <h3>Digital Marketing</h3>
-
                 <p>
-                    Online visibility and digital marketing
-                    solutions that help businesses reach
-                    audiences and strengthen their presence.
+                    Digital promotion and online visibility solutions
+                    for businesses and brands.
                 </p>
+            </article>
 
-                <span class="service-number">05</span>
-
-            </div>
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fas fa-shield-halved"></i>
-                </div>
-
+            <article class="service-card">
+                <div class="service-icon">06</div>
                 <h3>Cybersecurity Development</h3>
-
                 <p>
-                    Security-conscious development practices
-                    and technology solutions focused on
-                    supporting safer digital environments.
+                    Development of cybersecurity capabilities and
+                    security-conscious technology solutions.
                 </p>
-
-                <span class="service-number">06</span>
-
-            </div>
+            </article>
 
         </div>
 
     </div>
+</section>
 
-</section>  
-<!-- ================= EXPERTISE SECTION ================= -->
 
-<section class="expertise section-padding" id="expertise">
-
-    <div class="container expertise-container">
+<!-- EXPERTISE -->
+<section class="section-padding expertise" id="expertise">
+    <div class="container expertise-grid">
 
         <div class="expertise-content">
 
-            <span class="section-label">OUR TECHNICAL FOCUS</span>
+            <span class="eyebrow">TECHNICAL DIRECTION</span>
 
             <h2>
-                Developing
-                <span>Technology for</span>
-                a Digital Future.
+                Our areas of
+                <span>technology focus.</span>
             </h2>
 
             <p>
-                Yaxo-Systems focuses on software development,
-                digital infrastructure, business technology
-                and security-conscious solutions. We continuously
-                develop our technical capabilities to build
-                practical solutions for evolving needs.
+                We are building capabilities across key areas of modern
+                technology to support our services and product development.
             </p>
 
-            <a href="#contact" class="btn btn-white">
-                Discuss a Project
-                <i class="fas fa-arrow-right"></i>
-            </a>
-
         </div>
+
 
         <div class="expertise-list">
 
             <div class="expertise-item">
-                <i class="fas fa-code"></i>
-                <span>Software & Application Development</span>
+                <span>01</span>
+                <strong>Web Technologies</strong>
             </div>
 
             <div class="expertise-item">
-                <i class="fas fa-network-wired"></i>
-                <span>Digital Infrastructure</span>
+                <span>02</span>
+                <strong>Software Engineering</strong>
             </div>
 
             <div class="expertise-item">
-                <i class="fas fa-database"></i>
-                <span>Business Systems & Data Management</span>
+                <span>03</span>
+                <strong>Database & Information Systems</strong>
             </div>
 
             <div class="expertise-item">
-                <i class="fas fa-shield-halved"></i>
-                <span>Security-Conscious Development</span>
+                <span>04</span>
+                <strong>Cloud & Digital Infrastructure</strong>
             </div>
 
             <div class="expertise-item">
-                <i class="fas fa-cloud"></i>
-                <span>Digital Platforms & Solutions</span>
+                <span>05</span>
+                <strong>Cybersecurity</strong>
+            </div>
+
+            <div class="expertise-item">
+                <span>06</span>
+                <strong>Business Process Automation</strong>
             </div>
 
         </div>
 
     </div>
-
 </section>
-       <!-- ================= PROJECTS SECTION ================= -->
 
-<section class="projects section-padding" id="projects">
 
+<!-- PROJECTS -->
+<section class="section-padding projects" id="projects">
     <div class="container">
 
         <div class="section-heading">
-
-            <span class="section-label">OUR WORK</span>
+            <span class="eyebrow">OUR WORK</span>
 
             <h2>
-                Technology Projects.
-                <span>Practical Innovation.</span>
+                Products & Development
+                <span>Projects.</span>
             </h2>
 
             <p>
-                Explore digital products and technology platforms
-                being developed by Yaxo-Systems to address
-                practical challenges across different industries.
+                We are developing digital products and business systems
+                designed to address practical challenges.
             </p>
-
-        </div> 
-<!-- FARMBOOK PROJECT -->
-
-<article class="project-card farmbook-project-card">
-
-    <div class="project-visual project-farmbook-visual">
-
-        <div class="farmbook-project-icon">
-            <i class="fas fa-seedling"></i>
         </div>
 
-        <span>FARMBOOK</span>
 
-        <small>AGRICULTURAL TECHNOLOGY</small>
+        <div class="projects-grid">
 
-    </div>
 
-    <div class="project-content">
+            <!-- FARMBOOK -->
+            <article class="project-card">
 
-        <span class="project-status completed-status">
-            <i class="fas fa-check-circle"></i>
-            V1 PROTOTYPE COMPLETED
-        </span>
+                <div class="project-top farmbook-top">
+                    <span class="project-label">YAXO PRODUCT</span>
+                    <span class="project-number">01</span>
 
-        <h3>FarmBook — Farm Management Application</h3>
+                    <div class="product-symbol">F</div>
 
-        <p>
-            A digital farm management application designed
-            to help farmers organise livestock records,
-            crop activities, animal health information,
-            expenses, sales and farm reports.
-        </p>
+                    <h3>FarmBook</h3>
 
-        <div class="farmbook-project-features">
+                    <p>
+                        Digital tools for modern agricultural management.
+                    </p>
+                </div>
 
-            <strong>PRODUCT FEATURES</strong>
 
-            <div>
-                <i class="fas fa-cow"></i>
-                Livestock Management
-            </div>
+                <div class="project-content">
 
-            <div>
-                <i class="fas fa-leaf"></i>
-                Crop Management
-            </div>
+                    <div class="project-status completed">
+                        <span></span>
+                        Completed
+                    </div>
 
-            <div>
-                <i class="fas fa-heartbeat"></i>
-                Animal Health Records
-            </div>
+                    <h3>FarmBook</h3>
 
-            <div>
-                <i class="fas fa-chart-line"></i>
-                Farm Reports & Analytics
-            </div>
+                    <p>
+                        FarmBook is a digital agriculture platform concept
+                        designed to support farmers and agricultural
+                        businesses with organised farm information
+                        and management tools.
+                    </p>
 
-        </div>
+                    <div class="project-tags">
+                        <span>Agriculture</span>
+                        <span>Digital Platform</span>
+                        <span>Farm Management</span>
+                    </div>
 
-        <div class="hub01-footer">
-            <span>
-                <i class="fas fa-code"></i>
-                Yaxo-Systems Product
-            </span>
+                    <div class="project-footer">
+                        <span>Product Development</span>
+                        <strong>V1 Completed</strong>
+                    </div>
 
-            <span>VERSION 1.0</span>
-        </div>
+                </div>
 
-    </div>
+            </article>
 
-</article>
 
-<!-- HUB 01 PROJECT SHOWCASE -->
+            <!-- HUB 01 -->
+            <article class="project-card">
 
-<article class="project-card hub01-card">
+                <div class="project-top hub-top">
+                    <span class="project-label">ENTERPRISE PROJECT</span>
+                    <span class="project-number">02</span>
 
-    <div class="project-visual project-hub01-visual">
+                    <div class="product-symbol">01</div>
 
-        <div class="hub01-icon">
-            <i class="fas fa-warehouse"></i>
-        </div>
+                    <h3>Hub 01</h3>
 
-        <span>HUB 01</span>
+                    <p>
+                        An integrated agribusiness operating platform.
+                    </p>
+                </div>
 
-        <small>AGRIBUSINESS TECHNOLOGY</small>
 
-    </div>
+                <div class="project-content">
 
-    <div class="project-content">
+                    <div class="project-status development">
+                        <span></span>
+                        In Development
+                    </div>
 
-        <span class="project-status">
-            <i class="fas fa-circle"></i>
-            IN DEVELOPMENT
-        </span>
+                    <h3>Hub 01 Software System</h3>
 
-        <h3>Hub 01 — Agribusiness Platform</h3>
+                    <p>
+                        A technology initiative focused on connecting
+                        agribusiness operations, from supplier management
+                        and receiving to inventory, processing,
+                        distribution and market intelligence.
+                    </p>
 
-        <p>
-            An integrated agribusiness operations platform
-            designed to connect supplier intelligence,
-            market research, procurement, inventory,
-            warehouse operations and supply-chain coordination.
-        </p>
+                    <div class="project-tags">
+                        <span>Enterprise Systems</span>
+                        <span>Agribusiness</span>
+                        <span>Operations</span>
+                    </div>
 
-        <div class="hub01-capabilities">
+                    <div class="project-footer">
+                        <span>Platform Development</span>
+                        <strong>V1 In Progress</strong>
+                    </div>
 
-            <strong>PLATFORM CAPABILITIES</strong>
+                </div>
 
-            <div>
-                <i class="fas fa-users"></i>
-                Supplier Intelligence
-            </div>
+            </article>
 
-            <div>
-                <i class="fas fa-chart-line"></i>
-                Market Intelligence
-            </div>
-
-            <div>
-                <i class="fas fa-boxes-stacked"></i>
-                Inventory & Warehouse Operations
-            </div>
-
-            <div>
-                <i class="fas fa-truck"></i>
-                Supply-Chain Coordination
-            </div>
-
-        </div>
-
-        <div class="hub01-footer">
-            <span>
-                <i class="fas fa-code"></i>
-                Yaxo-Systems Project
-            </span>
-
-            <span>IN PROGRESS</span>
         </div>
 
     </div>
-    </div>
-
 </section>
 
-<!-- END OF PROJECTS SECTION -->
-</article>
 
-        <!-- ================= INNOVATION SECTION ================= -->
+<!-- INNOVATION -->
+<section class="section-padding innovation" id="innovation">
+    <div class="container innovation-content">
 
-        <section class="innovation">
+        <span class="eyebrow">LOOKING AHEAD</span>
 
-            <div class="container innovation-content">
+        <h2>
+            Building today's solutions.
+            <span>Preparing for tomorrow's opportunities.</span>
+        </h2>
 
-                <span class="section-label">THE YAXO APPROACH</span>
+        <p>
+            Our long-term direction is to develop useful technology products,
+            expand our capabilities and establish strategic partnerships
+            that support sustainable growth.
+        </p>
 
-                <h2>
-                    Innovation Begins
-                    With Solving
-                    <span>Real Problems.</span>
-                </h2>
+        <a href="#contact" class="btn btn-light">
+            Discuss an Opportunity
+        </a>
 
-                <p>
-                    We are committed to exploring ideas, developing
-                    practical solutions and creating technology
-                    that makes a difference.
-                </p>
+    </div>
+</section>
 
-                <a href="#contact" class="btn btn-white">
-                    Start a Conversation
-                    <i class="fas fa-arrow-right"></i>
-                </a>
 
-            </div>
+<!-- CONTACT -->
+<section class="section-padding contact" id="contact">
+    <div class="container contact-grid">
 
-        </section>
+        <div class="contact-content">
 
-  <!-- ================= CONTACT SECTION ================= -->
-
-<section class="contact section-padding" id="contact">
-
-    <div class="container contact-container">
-
-        <div class="contact-info">
-
-            <span class="section-label">LET'S BUILD SOMETHING</span>
+            <span class="eyebrow">GET IN TOUCH</span>
 
             <h2>
-                Let's Turn Your
-                <span>Ideas Into Reality.</span>
+                Let's build
+                <span>something meaningful.</span>
             </h2>
 
             <p>
-                Have a project, business challenge or technology
-                idea? Connect with Yaxo-Systems to discuss practical
-                digital solutions and opportunities for collaboration.
+                Have a project, business challenge or partnership opportunity?
+                Contact Yaxo-Systems and let's discuss how technology
+                can help.
             </p>
 
-            <div class="contact-detail">
+            <div class="contact-details">
 
-                <i class="fas fa-envelope"></i>
-
-                <div>
-                    <span>Email Enquiries</span>
+                <div class="contact-detail">
+                    <span>Email</span>
                     <a href="mailto:yayamohammed292@gmail.com">
                         yayamohammed292@gmail.com
                     </a>
                 </div>
 
-            </div>
-
-            <div class="contact-detail">
-
-                <i class="fab fa-whatsapp"></i>
-
-                <div>
-                    <span>WhatsApp Enquiries</span>
-                    <a href="https://wa.me/233542408676"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                <div class="contact-detail">
+                    <span>WhatsApp</span>
+                    <a href="https://wa.me/233542408676" target="_blank" rel="noopener">
                         +233 54 240 8676
                     </a>
                 </div>
 
             </div>
 
-            <div class="contact-trust-note">
+        </div>
 
-                <i class="fas fa-handshake"></i>
 
-                <span>
-                    Open to client projects, partnerships
-                    and business opportunities.
-                </span>
+        <div class="contact-form-card">
 
-            </div>
+            <h3>Start a Conversation</h3>
+
+            <p>Send us a message about your enquiry.</p>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="What would you like to discuss?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Write your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-button">
+                    Send Message
+                </button>
+
+            </form>
 
         </div>
 
-        <form class="contact-form" id="contactForm">
-
-            <div class="contact-form-heading">
-
-                <span class="section-label">GET IN TOUCH</span>
-
-                <h3>Tell Us About Your Project</h3>
-
-                <p>
-                    Share a few details and let's start a conversation.
-                </p>
-
-            </div>
-
-            <div class="form-group">
-
-                <label for="name">Full Name</label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your full name"
-                    required
-                >
-
-            </div>
-
-            <div class="form-group">
-
-                <label for="email">Email Address</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email address"
-                    required
-                >
-
-            </div>
-
-            <div class="form-group">
-
-                <label for="service">What Do You Need?</label>
-
-                <select id="service" name="service" required>
-
-                    <option value="">Choose a service</option>
-
-                    <option value="Website Development">
-                        Website Development
-                    </option>
-
-                    <option value="Application Development">
-                        Application Development
-                    </option>
-
-                    <option value="Digital Business Systems">
-                        Digital Business Systems
-                    </option>
-
-                    <option value="IT Support">
-                        IT Support
-                    </option>
-
-                    <option value="Digital Marketing">
-                        Digital Marketing
-                    </option>
-
-                    <option value="Cybersecurity">
-                        Cybersecurity
-                    </option>
-
-                    <option value="Partnership">
-                        Partnership & Collaboration
-                    </option>
-
-                    <option value="Other">
-                        Other Enquiry
-                    </option>
-
-                </select>
-
-            </div>
-
-            <div class="form-group">
-
-                <label for="message">Project Details</label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    placeholder="Tell us about your idea or project..."
-                    required
-                ></textarea>
-
-            </div>
-
-            <button type="submit" class="btn btn-primary form-button">
-
-                Send Enquiry
-                <i class="fas fa-paper-plane"></i>
-
-            </button>
-
-            <p class="form-note">
-                Your enquiry will be prepared for sending through WhatsApp.
-            </p>
-
-        </form>
-
     </div>
-
 </section>
-   <!-- ================= FOOTER ================= -->
 
+
+<!-- FOOTER -->
 <footer class="footer">
 
-    <div class="container footer-container">
+    <div class="container footer-main">
 
-        <!-- BRAND -->
         <div class="footer-brand">
 
-            <a href="#home" class="footer-brand-logo">
-                <img src="yaxo-logo.svg" alt="Yaxo-Systems">
+            <a href="#home" class="brand footer-logo">
+                <img src="yaxo-logo.svg" alt="Yaxo-Systems Logo" class="brand-logo">
+                <span class="brand-name">Yaxo-Systems</span>
             </a>
 
             <p>
-                Engineering digital possibilities through
-                innovation, software development and practical
-                technology solutions.
+                Building technology that moves businesses forward.
+                Digital solutions with purpose.
             </p>
-
-            <span class="footer-tagline">
-                Technology. Innovation. Possibility.
-            </span>
 
         </div>
 
-        <!-- EXPLORE -->
+
         <div class="footer-links">
-
-            <h4>Explore</h4>
-
-            <a href="#home">Home</a>
+            <h4>Company</h4>
             <a href="#about">About Us</a>
-            <a href="#founder">Leadership</a>
-            <a href="#services">Our Services</a>
-            <a href="#projects">Our Projects</a>
-
+            <a href="#founder">Founder</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
         </div>
 
-        <!-- SERVICES -->
+
         <div class="footer-links">
-
-            <h4>Our Focus</h4>
-
-            <a href="#services">Website Development</a>
-            <a href="#services">Application Development</a>
-            <a href="#services">Business Systems</a>
-            <a href="#services">IT Solutions</a>
-            <a href="#services">Cybersecurity</a>
-
+            <h4>Explore</h4>
+            <a href="#expertise">Expertise</a>
+            <a href="#approach">Our Approach</a>
+            <a href="#innovation">Innovation</a>
+            <a href="#contact">Contact</a>
         </div>
 
-        <!-- CONNECT -->
+
         <div class="footer-links">
-
-            <h4>Connect With Us</h4>
-
-            <a href="mailto:yayamohammed292@gmail.com">
-                <i class="fas fa-envelope"></i> Email Us
+            <h4>Connect</h4>
+            <a href="mailto:yayamohammed292@gmail.com">Email Us</a>
+            <a href="https://wa.me/233542408676" target="_blank" rel="noopener">
+                WhatsApp
             </a>
-
-            <a href="https://wa.me/233542408676"
-               target="_blank"
-               rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-
-            <a href="#contact">
-                <i class="fas fa-paper-plane"></i> Start a Project
-            </a>
-
         </div>
 
     </div>
 
-    <!-- FOOTER BOTTOM -->
-    <div class="footer-bottom">
 
-        <div class="container footer-bottom-content">
+    <div class="container footer-bottom">
 
-            <p>
-                &copy; <span id="currentYear"></span>
-                Yaxo-Systems. All rights reserved.
-            </p>
+        <p>
+            &copy; <span id="currentYear"></span> Yaxo-Systems.
+            All rights reserved.
+        </p>
 
-            <span>Engineering Digital Possibilities.</span>
-
-        </div>
+        <span>Technology With Purpose.</span>
 
     </div>
 
-</footer> 
-    <!-- ================= FLOATING WHATSAPP ================= -->
+</footer>
 
-    <a
-        href="https://wa.me/233542408676"
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with Yaxo-Systems on WhatsApp"
-    >
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
-    <!-- Main JavaScript -->
-    <script src="script.js"></script>
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/233542408676"
+   class="whatsapp-button"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact Yaxo-Systems on WhatsApp">
+
+    <span>WhatsApp</span>
+
+</a>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
