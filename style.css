@@ -1503,3 +1503,23 @@ transition-duration: 0.01ms !important;
     transform: translateY(-4px);
     transition: all 0.3s ease;
 }
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0b1f3a;
+    white-space: nowrap;
+}
