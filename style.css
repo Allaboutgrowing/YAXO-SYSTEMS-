@@ -4735,3 +4735,177 @@ button {
         font-size: 23px;
     }
 }
+/* =====================================
+   PREMIUM FOOTER
+===================================== */
+
+.footer {
+    position: relative;
+    background: #06162e;
+    color: #ffffff;
+    padding-top: 75px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 65px;
+}
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.footer-logo .brand-name {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.footer-brand p {
+    margin: 22px 0;
+    color: #a9b8ce;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.footer-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #8dbbff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-cta span {
+    transition: transform 0.2s ease;
+}
+
+.footer-cta:hover span {
+    transform: translateX(5px);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links h4 {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.footer-links a {
+    width: fit-content;
+    color: #a9b8ce;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #8dbbff;
+    transform: translateX(4px);
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom p,
+.footer-tagline {
+    color: #899bb4;
+    font-size: 12px;
+}
+
+.footer-tagline {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 22px;
+    border-radius: 50px;
+    background: #159b63;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-button:hover {
+    background: #087c4d;
+    transform: translateY(-4px);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .footer-main {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 45px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 25px;
+        padding-bottom: 45px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .whatsapp-button {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 18px;
+    }
+}
