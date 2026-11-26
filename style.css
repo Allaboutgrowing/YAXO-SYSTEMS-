@@ -3791,3 +3791,508 @@ button {
     }
 
 }
+/* =========================================
+   YAXO-SYSTEMS — PROJECTS & PRODUCTS
+========================================= */
+
+.projects {
+    background: #f4f7fb;
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+/* SECTION HEADING */
+
+.projects-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    margin-bottom: 55px;
+}
+
+.projects-heading .eyebrow {
+    display: inline-block;
+    color: #286db8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.projects-heading h2 {
+    font-family: 'Manrope', sans-serif;
+    color: #0b1d35;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.projects-heading h2 span {
+    display: block;
+    color: #286db8;
+}
+
+.projects-heading > p {
+    max-width: 390px;
+    color: #657386;
+    font-size: 14px;
+    line-height: 1.9;
+    padding-bottom: 5px;
+}
+
+
+/* PROJECT GRID */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+/* PROJECT CARD */
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e5ebf2;
+    overflow: hidden;
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(11, 35, 66, .09);
+}
+
+
+/* PROJECT VISUAL HEADER */
+
+.project-top {
+    min-height: 350px;
+    padding: 25px 28px;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.farmbook-top {
+    background:
+        radial-gradient(circle at 75% 35%, rgba(79, 169, 133, .35), transparent 38%),
+        linear-gradient(140deg, #0b493d, #092b32);
+}
+
+.hub-top {
+    background:
+        radial-gradient(circle at 75% 35%, rgba(70, 140, 220, .35), transparent 38%),
+        linear-gradient(140deg, #0b2342, #102f57);
+}
+
+.project-top-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.project-label {
+    color: rgba(255,255,255,.8);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.project-number {
+    color: rgba(255,255,255,.6);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* FARMBOOK VISUAL */
+
+.project-visual {
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.farmbook-circle {
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+}
+
+.circle-one {
+    width: 125px;
+    height: 125px;
+}
+
+.circle-two {
+    width: 175px;
+    height: 175px;
+    border-style: dashed;
+}
+
+.farmbook-symbol {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.4);
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    box-shadow: 0 0 45px rgba(100,220,160,.18);
+}
+
+.farmbook-visual-label,
+.hub-visual-label {
+    position: absolute;
+    bottom: -28px;
+    color: rgba(255,255,255,.65);
+    font-size: 8px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+
+/* HUB 01 VISUAL */
+
+.hub-orbit {
+    position: absolute;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+}
+
+.hub-orbit-one {
+    width: 115px;
+    height: 115px;
+}
+
+.hub-orbit-two {
+    width: 175px;
+    height: 175px;
+    border-style: dashed;
+}
+
+.hub-core {
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    z-index: 2;
+    box-shadow: 0 0 45px rgba(80,160,255,.25);
+}
+
+.hub-node {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #83baff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.hub-node-one {
+    top: 4px;
+    left: 88px;
+}
+
+.hub-node-two {
+    right: 8px;
+    bottom: 35px;
+}
+
+.hub-node-three {
+    left: 5px;
+    bottom: 35px;
+}
+
+
+/* PROJECT TITLES */
+
+.project-top-title {
+    position: relative;
+    z-index: 2;
+}
+
+.project-top-title > span {
+    color: rgba(255,255,255,.65);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.project-top-title h3 {
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.project-top-title p {
+    color: rgba(255,255,255,.8);
+    font-size: 12px;
+}
+
+
+/* PROJECT CONTENT */
+
+.project-content {
+    padding: 28px;
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    border-radius: 3px;
+}
+
+.project-status > span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.project-status.completed {
+    background: #e9f7ef;
+    color: #20834d;
+}
+
+.project-status.completed > span {
+    background: #25a45f;
+}
+
+.project-status.development {
+    background: #edf4fc;
+    color: #286db8;
+}
+
+.project-status.development > span {
+    background: #3988d8;
+}
+
+.project-content h3 {
+    color: #10243e;
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.project-content > p {
+    color: #718096;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 23px;
+}
+
+
+/* PROJECT TAGS */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.project-tags span {
+    padding: 8px 10px;
+    background: #f1f5fa;
+    color: #52647a;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+
+/* PROJECT FOOTER */
+
+.project-divider {
+    height: 1px;
+    background: #e8edf3;
+    margin-bottom: 20px;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.project-footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.project-footer div > span {
+    color: #91a0b2;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.project-footer strong {
+    color: #263c56;
+    font-size: 11px;
+}
+
+.project-footer .status-text-completed {
+    color: #20834d;
+}
+
+.project-footer .status-text-development {
+    color: #286db8;
+}
+
+
+/* BOTTOM STATEMENT */
+
+.projects-bottom {
+    margin-top: 45px;
+    padding: 28px 30px;
+    background: #0b2342;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.projects-bottom > div > span {
+    color: #8eb8e8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.projects-bottom p {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.projects-bottom a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: #ffffff;
+    color: #0b2342;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+.projects-bottom a:hover {
+    background: #286db8;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 950px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 650px) {
+
+    .projects {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .projects-heading {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .projects-heading h2 {
+        font-size: 34px;
+    }
+
+    .projects-heading > p {
+        margin-top: 20px;
+    }
+
+    .project-top {
+        min-height: 320px;
+        padding: 22px;
+    }
+
+    .project-content {
+        padding: 23px;
+    }
+
+    .project-content h3 {
+        font-size: 20px;
+    }
+
+    .project-footer {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .projects-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 25px 22px;
+    }
+
+    .projects-bottom a {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
